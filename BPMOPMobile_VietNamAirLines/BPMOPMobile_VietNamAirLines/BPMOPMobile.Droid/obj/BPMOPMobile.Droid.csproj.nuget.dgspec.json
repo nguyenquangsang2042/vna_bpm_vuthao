@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj": {}
+    "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj": {}
   },
   "projects": {
-    "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj": {
+    "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj",
+        "projectUniqueName": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj",
         "projectName": "BPMOPMobile.Droid.Core",
-        "projectPath": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj",
-        "packagesPath": "C:\\Users\\sangnq\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\obj\\",
+        "projectPath": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj",
+        "packagesPath": "C:\\Users\\sang\\.nuget\\packages\\",
+        "outputPath": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sangnq\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
@@ -98,23 +98,23 @@
         }
       }
     },
-    "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj": {
+    "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj",
+        "projectUniqueName": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj",
         "projectName": "BPMOPMobile.Droid",
-        "projectPath": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj",
-        "packagesPath": "C:\\Users\\sangnq\\.nuget\\packages\\",
-        "outputPath": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\obj\\",
+        "projectPath": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\BPMOPMobile.Droid.csproj",
+        "packagesPath": "C:\\Users\\sang\\.nuget\\packages\\",
+        "outputPath": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sangnq\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\sang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid11.0"
@@ -126,8 +126,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj": {
-                "projectPath": "C:\\Project\\GitDevop\\Git_VNA_DPM\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj"
+              "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj": {
+                "projectPath": "D:\\vna_bpm_vuthao\\BPMOPMobile_VietNamAirLines\\BPMOPMobile_VietNamAirLines\\BPMOPMobile.Droid.Core\\BPMOPMobile.Droid.Core.csproj"
               }
             }
           }
