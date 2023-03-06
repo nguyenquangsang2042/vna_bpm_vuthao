@@ -1,0 +1,40 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="0px"
+        android:minHeight="0px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_ItemDynamicList_All"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ln_ItemDynamicList_Content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ln_ItemDynamicList_LoadMore">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:indeterminateTint="@color/clViolet"          
+            android:alpha="0.7"/>
+    </LinearLayout>
+</LinearLayout>

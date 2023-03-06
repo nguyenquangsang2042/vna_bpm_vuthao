@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_ItemAttachFile"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light"
+        android:padding="5dp"
+        android:gravity="center"
+        android:weightSum="1">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:layout_margin="5dp">
+            <ImageView
+                android:src="@drawable/icon_attachfile_excel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_ItemAttachFile"
+                android:padding="5dp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1"
+            android:background="@android:color/background_light"
+            android:layout_weight="0.9"
+            android:layout_margin="5dp">
+			<TextView
+				android:text="Text "
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/tv_ItemAttachFile_Name"
+				android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14"
+				android:ellipsize="end"
+				android:lines="1"
+				android:maxLines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

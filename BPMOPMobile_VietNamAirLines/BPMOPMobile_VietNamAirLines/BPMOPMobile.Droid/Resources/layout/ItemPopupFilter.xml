@@ -1,0 +1,52 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/ln_ItemPopupFilter"
+        android:foreground="?attr/selectableItemBackground">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Text quy trình đề xuất tạm ứng chi phí tổ chức sự kiện"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/clBlack"
+                android:textSize="@dimen/text14"
+                android:gravity="left"
+                android:maxLines="10"
+                android:ellipsize="end"
+                android:layout_weight="10"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_ItemPopupFilter_Title"/>
+            <ImageView
+                android:src="@drawable/icon_check"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="2dp"
+                android:tint="@color/clVer2BlueMain"
+                android:id="@+id/img_ItemPopupFilter_Check" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/clGrayNavigator2"/>
+    </LinearLayout>
+</LinearLayout>

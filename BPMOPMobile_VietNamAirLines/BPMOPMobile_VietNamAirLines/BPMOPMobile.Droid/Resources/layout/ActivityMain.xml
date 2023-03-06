@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerlayout_ActivityMain_Content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clWhite">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_ActivityMain_content"/>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_ActivityMain_leftmenu"
+        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:background="@color/clWhite"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+</android.support.v4.widget.DrawerLayout>

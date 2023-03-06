@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:text="Người khởi tạo (*)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text14"
+            android:textColor="@color/clGraytitle"
+            android:id="@+id/lbl_ItemDetailWorkflowView" />
+        <TextView
+            android:text="Text Nguyễn Hương Ly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_below="@+id/lbl_ItemDetailWorkflowView"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text16"
+            android:textColor="@color/clBlack"
+            android:id="@+id/tv_ItemDetailWorkflowView" />
+    </RelativeLayout>
+</LinearLayout>

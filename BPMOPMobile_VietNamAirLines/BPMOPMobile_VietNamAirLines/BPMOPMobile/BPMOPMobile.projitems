@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="SharedProjectFile_SccProperties">
+    <SharedProjectFile_ProjectGuid>{89bc39ae-34f8-4267-ac05-72324f0cc095}</SharedProjectFile_ProjectGuid>
+    <SharedProjectFile_SccProjectName>SAK</SharedProjectFile_SccProjectName>
+    <SharedProjectFile_SccAuxPath>SAK</SharedProjectFile_SccAuxPath>
+    <SharedProjectFile_SccLocalPath>SAK</SharedProjectFile_SccLocalPath>
+    <SharedProjectFile_SccProvider>SAK</SharedProjectFile_SccProvider>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{ACEC1C7B-EDB5-4BE7-9532-F54FBFEDD487}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BPMOPMobile</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAppBaseExt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanListWorkFlow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanLookupData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanQuaTrinhLuanChuyenBK.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanTreeNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectPropertySearch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ViewBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ViewElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ViewRow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ViewSection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyClass.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAppLanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAttachFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanControlDynamicDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanDataLookup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanDepartment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanItemDeleted.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanNotify.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanQuaTrinhLuanChuyen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanSearchProperty.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanTicketRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflowItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ButtonAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\DBVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\DeviceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\CmmEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\CmmFunction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\CmmVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\ConfigVariable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\Crypter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\WorkflowAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataProvider\ProviderBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataProvider\ProviderControlDynamic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataProvider\ProviderUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAttachFileCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectSubmitAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkFlowRelated.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanUserAndGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanTimeLanguage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectElementNote.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanStepQTLC.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanShareHistory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflowStepDefine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflowCategory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflowFollow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWFDetailsHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWFDetailsValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWFDetailLookup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanTask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanPosition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectValueType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Class\Formula.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanComment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanOtherResource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectFilter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\ObjectSubmitDetailComment.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanWorkflowStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAppBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanAppStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Bean\BeanResourceView.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Class\" />
+    <Folder Include="$(MSBuildThisFileDirectory)DataProvider\" />
+  </ItemGroup>
+</Project>

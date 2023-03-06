@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/textcornerwhite2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <ImageView
+                android:src="@drawable/icon_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupInputChoose_Close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:tint="@color/clHint"
+                android:layout_centerVertical="false" />
+            <TextView
+                android:text="Ý kiến"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupInputChoose_YKien"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@string/text_light"
+                android:visibility="visible" />
+        </RelativeLayout>
+        <RadioGroup
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_PopupInputChoose_Group"
+            android:padding="20dp" >
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/ln_ChooseUser_Action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="right"
+            android:paddingBottom="10dp">
+            <TextView
+                android:text="Thoát"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupInputChoose_Huy"
+                android:fontFamily="@font/fontarial"
+                android:textColor="@color/clRed"
+                android:textSize="@dimen/text16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp" />
+            <TextView
+                android:text="Đồng ý"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupInputChoose_DongY"
+                android:fontFamily="@font/fontarial"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/textcornerviolet2"
+                android:textSize="@dimen/text16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

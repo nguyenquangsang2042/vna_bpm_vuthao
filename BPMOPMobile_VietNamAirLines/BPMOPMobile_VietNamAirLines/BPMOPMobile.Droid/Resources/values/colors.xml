@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#2c3e50</color>
+  <color name="colorPrimaryDark">#1B3147</color>
+  <color name="colorAccent">#3498db</color>
+
+  <color name="clViolet">#415086</color>
+  <color name="clYellowLoginButton">#C9982A</color>
+  <color name="clVioletBackground">#353F66</color>
+  <color name="clVioletText">#1B2336</color>
+  <color name="clWhite">#ffffff</color>
+  <color name="clBlack">#000000</color>
+  <color name="clGrayNavigator">#F5F5F5</color>
+  <color name="clGrayNavigator2">#C4C4C4</color>
+  <color name="clGraytitle">#686868</color>
+  <color name="clGraylight">#f4f4f4</color>
+  <color name="clGrayGroup">#F3F3F3</color>
+  <color name="clGraySize">#999999</color>
+  <color name="clGray">#E5E5E5</color>
+  <color name="clGraySearchUser">#F9F9F9</color>
+  <color name="clGrayLine">#E8E8E8</color>
+  <color name="clGrayGroupAttach">#F1F1F1</color>
+  <color name="clRed">#b3000a</color>
+  <color name="clRedMain">#e63a34</color>
+  <color name="clGreen">#3FA800</color>
+  <color name="clGreenDueDate">#239720</color>
+  <color name="clBlue">#335FB3</color>
+  <color name="clBlue1">#0060af</color>
+  <color name="clBlue2">#0b61ae</color>
+  <color name="clYellow">#FFEC00</color>
+  <color name="clOrange">#FF7D03</color>
+  <color name="clPink">#ef9a9a</color>
+  <color name="clOrangeFilter">#FF7A3A</color>
+  <color name="clOrangePocess">#F5A623</color>
+  <color name="clBlackBlur">#73000000</color>
+
+  <color name="clPurpleToday">#8B4FB7</color>
+  <color name="clHint">#aaaaaa</color>
+  <color name="clTransparent">#00000000</color>
+  <color name="transparent">#00000000</color>
+  <color name="clLeftMenu">#0e1e2f</color>
+  <color name="clTextEnable">#0961ae</color>
+  <color name="clBottomEnable">#3360B4</color>
+  <color name="clBlueEnable">#335FB3</color>
+  <color name="clItemListEnable">#F6F9FF</color>
+
+  <color name="clBottomDisable">#5E5E5E</color>
+  <color name="clMainLightBlue">#E3E9F9</color>
+  <color name="clTextSmall">#888888</color>
+  <color name="clIcon">#fcb22f</color>
+ 
+  <color name="clDetailProcessBlue">#C5DDF9</color>
+  <color name="clDetailProcessGreen">#E5FFE4</color>
+  <color name="clDetailProcessPink">#FFE1F5</color>
+  <color name="clDetailProcessRed">#FFCBCB</color>
+  <color name="clDetailProcessYellow">#FEEDBB</color>
+
+  <color name="clActionGreen">#77E075</color>
+  <color name="clActionYellow">#FFDA6C</color>
+  <color name="clActionRed">#EA342E</color>
+  <color name="clActionBlack">#5E5E5E</color>
+  <color name="clActionBlue">#C5DDF9</color>
+  <color name="clActionOrange">#FEA072</color>
+  <color name="clActionGray">#979797</color>
+
+  <color name="clStatusGreen">#E5FFE4</color>
+  <color name="clStatusRed">#FFE6E6</color>
+  <color name="clStatusOrange">#FDD4C0</color>
+  <color name="clStatusBlue">#C5DDF9</color>
+  <color name="clStatusGray">#F3F3F3</color>
+
+  <color name="clControlHint">#28B0FF</color>
+  <color name="clControlGray">#707070</color>
+  <color name="clControlGrayLight">#E7E7E7</color>
+  <color name="clControlBlueEnable">#F6F9FF</color>
+
+  <color name="clBoardGreen">#E0F9E6</color>
+  <color name="clBoardRed">#FFE8E8</color>
+  <color name="clBoardBlue">#E4EFFD</color>
+  <color name="clBoardOrange">#FF9F1A</color>
+  <color name="clBoardOrangeRequestInfo">#FFE6DA</color>
+  <color name="clBoardDetailGreen">#63E082</color>
+  <color name="clBoardDetailRed">#FF6464</color>
+  <color name="clBoardDetailBlue">#28B0FF</color>
+
+  <color name="clTaskStatusBlue">#D1E9FF</color>
+  <color name="clTaskStatusRed">#FFCBCB</color>
+  <color name="clTaskStatusGreen">#DCFFDA</color>
+  <color name="clTaskStatusGray">#F0F0F0</color>
+
+  <color name="clVer2BlueTint">#f4f9ff</color>
+  <color name="clVer2BlueNavigation">#F3F9FF</color>
+  <color name="clVer2BlueMain">#005FD4</color>
+  <color name="clVer2BlueBackground">#CDE3FF</color>
+
+  <color name="clCharacterA">#E18D96</color>
+  <color name="clCharacterB">#F3D1DC</color>
+  <color name="clCharacterC">#FCF0CF</color>
+  <color name="clCharacterD">#FDCF76</color>
+  <color name="clCharacterE">#B16E4B</color>
+  <color name="clCharacterF">#89AEB2</color>
+  <color name="clCharacterG">#F1E0B0</color>
+  <color name="clCharacterH">#F1CDB0</color>
+  <color name="clCharacterI">#E7CFC8</color>
+  <color name="clCharacterJ">#D2A3A9</color>
+  <color name="clCharacterK">#E6DCE5</color>
+  <color name="clCharacterL">#EBC3C1</color>
+  <color name="clCharacterM">#ECAD8F</color>
+  <color name="clCharacterN">#AF6E4E</color>
+  <color name="clCharacterO">#C8B4BA</color>
+  <color name="clCharacterP">#F3DD83</color>
+  <color name="clCharacterQ">#C1CD97</color>
+  <color name="clCharacterR">#38908F</color>
+  <color name="clCharacterS">#5E96AE</color>
+  <color name="clCharacterT">#E08963</color>
+  <color name="clCharacterU">#BC85A3</color>
+  <color name="clCharacterV">#9799BA</color>
+  <color name="clCharacterW">#B5DDD1</color>
+  <color name="clCharacterX">#D7E7A9</color>
+  <color name="clCharacterY">#84B4C8</color>
+  <color name="clCharacterZ">#619169</color>
+</resources>

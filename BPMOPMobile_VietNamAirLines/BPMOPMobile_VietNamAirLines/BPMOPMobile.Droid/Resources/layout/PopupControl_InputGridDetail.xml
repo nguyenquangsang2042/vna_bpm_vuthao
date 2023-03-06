@@ -1,0 +1,102 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textcornerwhite2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/clWhite">
+            <ImageView
+                android:src="@drawable/icon_back30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputGridDetail_Back"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable" />
+            <ImageView
+                android:src="@drawable/icon_bpm_btn_action_11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/img_PopupControl_InputGridDetail_Done"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:tint="@color/clBottomDisable"/>
+            <ImageView
+                android:src="@drawable/icon_ver2_trash"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="2dp"
+                android:id="@+id/img_PopupControl_InputGridDetail_Delete"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputGridDetail_Done"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/img_PopupControl_InputGridDetail_Back"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputGridDetail_Delete">
+                <TextView
+                    android:text="Phân công công việc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_PopupControl_InputGridDetail_Title"
+                    android:textColor="@color/clVer2BlueMain"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text16"
+                    android:gravity="center"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:lines="1"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/view1"
+            android:background="@color/clGrayNavigator2"/>
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ln_PopupControl_InputGridDetail_Content">
+                <android.support.v7.widget.RecyclerView
+                    android:minWidth="0px"
+                    android:minHeight="0px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/recy_PopupControl_InputGridDetail_Content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

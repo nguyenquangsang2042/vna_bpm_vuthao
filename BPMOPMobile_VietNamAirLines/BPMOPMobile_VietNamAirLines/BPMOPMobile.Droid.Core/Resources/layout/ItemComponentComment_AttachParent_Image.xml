@@ -1,0 +1,41 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:id="@+id/ln_ItemComponentComment_AttachParent_Image_All">
+
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/clGray"
+            android:padding="1dp"
+            android:id="@+id/rela_ItemComponentComment_AttachParent_Image">
+            <ImageView
+                android:src="@drawable/img_ver3_loading"
+                android:minWidth="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_ItemComponentComment_AttachParent_Image" />
+        </RelativeLayout>
+
+        <ImageView
+            android:src="@drawable/icon_ver2_star_controlattch_delete"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_ItemComponentComment_AttachParent_Image_Delete" />
+    </LinearLayout>
+</LinearLayout>

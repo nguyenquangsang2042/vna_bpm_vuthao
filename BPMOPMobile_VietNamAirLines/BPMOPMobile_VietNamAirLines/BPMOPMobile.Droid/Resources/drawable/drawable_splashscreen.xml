@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@drawable/img_background_startview_2"/>
+
+  <!-- 64.1 - 27.3-->
+  <item android:width="256.4dp"
+        android:height="109.2dp"
+        android:gravity="center"
+        android:drawable="@drawable/img_background_leftmenu"/>
+  </layer-list>

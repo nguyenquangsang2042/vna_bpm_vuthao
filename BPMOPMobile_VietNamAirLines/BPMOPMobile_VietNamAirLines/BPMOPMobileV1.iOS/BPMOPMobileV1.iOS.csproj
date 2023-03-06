@@ -1,0 +1,819 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{C3B5BE16-105E-4B49-A104-53CE16175DD9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{edc1b0fa-90cd-4038-8fad-98fe74adb368}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BPMOPMobileV1.iOS</RootNamespace>
+    <AssemblyName>BPMOPMobileV1.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>Apple Development: Dev department VT (9S7JUT8CFN)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>Apple Development: Dev department VT (9S7JUT8CFN)</CodesignKey>
+    <MtouchNoSymbolStrip>
+    </MtouchNoSymbolStrip>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+    <MtouchExtraArgs>-v</MtouchExtraArgs>
+    <CodesignProvision>VNA DPM Dev</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Distribution: VIETNAM AIRLINES JSC (3RW6APHT3S)</CodesignKey>
+    <BuildIpa>true</BuildIpa>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignProvision>DPM VNA - Iphone - AppStore</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin-Sidebar">
+      <HintPath>..\packages\Xamarin-Sidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar">
+      <HintPath>..\packages\Xamarin-Sidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Xamarin.iOS">
+      <HintPath>..\packages\Telerik.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="VuThao.Calc">
+      <HintPath>..\packages\VuThao.Calc.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite-net">
+      <HintPath>..\packages\SQLite-net.dll</HintPath>
+    </Reference>
+    <Reference Include="VuThao.Calc">
+      <HintPath>..\packages\VuThao.Calc.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin-Sidebar">
+      <HintPath>..\packages\Xamarin-Sidebar.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Xamarin.iOS">
+      <HintPath>..\packages\Telerik.Xamarin.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Portable.BouncyCastle">
+      <Version>1.8.6.7</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_green">
+      <Version>1.1.14</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="TEditor.VK">
+      <Version>1.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="SlideMenuControllerXamarin">
+      <Version>1.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="dannycabrera.GetiOSModel">
+      <Version>1.15.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\FormListItemView.xib" />
+    <InterfaceDefinition Include="ViewControllers\FormShareView.xib" />
+    <InterfaceDefinition Include="ViewControllers\AuthenticationOTPView.xib" />
+    <InterfaceDefinition Include="ViewControllers\FormCalendarChoice.xib" />
+    <InterfaceDefinition Include="ViewControllers\FormCreateTaskView.xib" />
+    <InterfaceDefinition Include="ViewControllers\KanBanView.xib" />
+    <InterfaceDefinition Include="ViewControllers\MultiChoiceTableView.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomControlClass\Custom_TodoCell.cs" />
+    <Compile Include="CustomControlClass\Custom_WorkFlowItemCell.cs" />
+    <Compile Include="CustomControlClass\Moreaction_cell.cs" />
+    <Compile Include="CustomControlClass\Moreaction_cell.designer.cs">
+      <DependentUpon>Moreaction_cell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOSClass\ClassActionTask.cs" />
+    <Compile Include="IOSClass\ClassDynamicControl.cs" />
+    <Compile Include="IOSClass\CmmIOSFunction.cs" />
+    <Compile Include="IOSClass\CmmLoading.cs" />
+    <Compile Include="IOSClass\CommonClass.cs" />
+    <Compile Include="IOSClass\PresentationController.cs" />
+    <Compile Include="IOSClass\PresentationDelegate.cs" />
+    <Compile Include="IOSClass\PresentationTransitioning.cs" />
+    <Compile Include="IOSClass\Reachability.cs" />
+    <Compile Include="IOSClass\TimerResync.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="RootNavigationController.cs" />
+    <Compile Include="RootNavigationController.designer.cs">
+      <DependentUpon>RootNavigationController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SceneDelegate.cs" />
+    <Compile Include="ViewControllers\AgreeOrRejectView.cs" />
+    <Compile Include="ViewControllers\AgreeOrRejectView.designer.cs">
+      <DependentUpon>AgreeOrRejectView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\AttachmentListView.cs" />
+    <Compile Include="ViewControllers\AttachmentListView.designer.cs">
+      <DependentUpon>AttachmentListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ChangeUserProgress.cs" />
+    <Compile Include="ViewControllers\ChangeUserProgress.designer.cs">
+      <DependentUpon>ChangeUserProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FullTextView.cs" />
+    <Compile Include="ViewControllers\FullTextView.designer.cs">
+      <DependentUpon>FullTextView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ListUserView.cs" />
+    <Compile Include="ViewControllers\ListUserView.designer.cs">
+      <DependentUpon>ListUserView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MainView.cs" />
+    <Compile Include="ViewControllers\MainView.designer.cs">
+      <DependentUpon>MainView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MenuView.cs" />
+    <Compile Include="ViewControllers\MenuView.designer.cs">
+      <DependentUpon>MenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MultiChoiceView.cs" />
+    <Compile Include="ViewControllers\MultiChoiceView.designer.cs">
+      <DependentUpon>MultiChoiceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MyRequestListView.cs" />
+    <Compile Include="ViewControllers\MyRequestListView.designer.cs">
+      <DependentUpon>MyRequestListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\NumberControlView.cs" />
+    <Compile Include="ViewControllers\NumberControlView.designer.cs">
+      <DependentUpon>NumberControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ProgressView.cs" />
+    <Compile Include="ViewControllers\ProgressView.designer.cs">
+      <DependentUpon>ProgressView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RequestAddInfo.cs" />
+    <Compile Include="ViewControllers\RequestAddInfo.designer.cs">
+      <DependentUpon>RequestAddInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RequestListView.cs" />
+    <Compile Include="ViewControllers\RequestListView.designer.cs">
+      <DependentUpon>RequestListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ShowAttachmentView.cs" />
+    <Compile Include="ViewControllers\ShowAttachmentView.designer.cs">
+      <DependentUpon>ShowAttachmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\StartView.cs" />
+    <Compile Include="ViewControllers\StartView.designer.cs">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TextViewControlView.cs" />
+    <Compile Include="ViewControllers\TextViewControlView.designer.cs">
+      <DependentUpon>TextViewControlView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ToastMessageView.cs" />
+    <Compile Include="ViewControllers\ToastMessageView.designer.cs">
+      <DependentUpon>ToastMessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ViewRequestDetails.cs" />
+    <Compile Include="ViewControllers\ViewRequestDetails.designer.cs">
+      <DependentUpon>ViewRequestDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\CreateTicketRequest.cs" />
+    <Compile Include="ViewControllers\CreateTicketRequest.designer.cs">
+      <DependentUpon>CreateTicketRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentBase.cs" />
+    <Compile Include="Components\ComponentButtonBot.cs" />
+    <Compile Include="Components\ComponentRow1.cs" />
+    <Compile Include="Components\ComponentRow2.cs" />
+    <Compile Include="Components\ComponentRow3.cs" />
+    <Compile Include="Components\ComponentSection.cs" />
+    <Compile Include="Components\ControlAttachment.cs" />
+    <Compile Include="Components\ControlAttachmentVertical.cs" />
+    <Compile Include="Components\ControlBase.cs" />
+    <Compile Include="Components\ControlButtonBot.cs" />
+    <Compile Include="Components\ControlDate.cs" />
+    <Compile Include="Components\ControlSelectUserOrGroup.cs" />
+    <Compile Include="Components\ControlNumber.cs" />
+    <Compile Include="Components\ControlSelectUser.cs" />
+    <Compile Include="Components\ControlSingleChoice.cs" />
+    <Compile Include="Components\ControlTabs.cs" />
+    <Compile Include="Components\ControlText.cs" />
+    <Compile Include="Components\ControlTree.cs" />
+    <Compile Include="Components\ControlYesNo.cs" />
+    <Compile Include="IOSClass\BeanTicket.cs" />
+    <Compile Include="CustomControlClass\Custom_CollectionHeader.cs" />
+    <Compile Include="IOSClass\BeanCategoryGroup.cs" />
+    <Compile Include="CustomControlClass\Custom_MenuOption.cs" />
+    <Compile Include="ViewControllers\CreateTicketFormView.cs" />
+    <Compile Include="ViewControllers\CreateTicketFormView.designer.cs">
+      <DependentUpon>CreateTicketFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ControlTextInput.cs" />
+    <Compile Include="IOSClass\PropretyBase.cs" />
+    <Compile Include="Components\ControlTextInputMultiLine.cs" />
+    <Compile Include="ViewControllers\RequestDetailsV2.cs" />
+    <Compile Include="ViewControllers\RequestDetailsV2.designer.cs">
+      <DependentUpon>RequestDetailsV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ControlAttachmentVerticalWithFormFrame.cs" />
+    <Compile Include="Components\ControlTextInputFormat.cs" />
+    <Compile Include="Components\ControlInputAttachmentVetical.cs" />
+    <Compile Include="CustomControlClass\Custom_AttachFileView.cs" />
+    <Compile Include="ViewControllers\AddAttachmentsView.cs" />
+    <Compile Include="ViewControllers\AddAttachmentsView.designer.cs">
+      <DependentUpon>AddAttachmentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ControlInputAttachmentHorizon.cs" />
+    <Compile Include="ViewControllers\FormEditAttachFileView.cs" />
+    <Compile Include="ViewControllers\FormEditAttachFileView.designer.cs">
+      <DependentUpon>FormEditAttachFileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FormAddWorkRelatedView.cs" />
+    <Compile Include="ViewControllers\FormAddWorkRelatedView.designer.cs">
+      <DependentUpon>FormAddWorkRelatedView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FormListItemView.cs" />
+    <Compile Include="ViewControllers\FormListItemView.designer.cs">
+      <DependentUpon>FormListItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\Custom_ListPickeritemView.cs" />
+    <Compile Include="CustomControlClass\Custom_CalendarView.cs" />
+    <Compile Include="Components\ControlInputWorkRelated.cs" />
+    <Compile Include="CustomControlClass\Custom_WorkRelatedCell.cs" />
+    <Compile Include="ViewControllers\FormShareView.cs" />
+    <Compile Include="ViewControllers\FormShareView.designer.cs">
+      <DependentUpon>FormShareView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\User_CollectionCell.cs" />
+    <Compile Include="CustomControlClass\Custom_UserCell.cs" />
+    <Compile Include="CustomControlClass\ButtonsActionBotBar.cs" />
+    <Compile Include="RootNavigation.cs" />
+    <Compile Include="RootNavigation.designer.cs">
+      <DependentUpon>RootNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\Custom_ToDoHeader.cs" />
+    <Compile Include="Components\ControlMultiChoice.cs" />
+    <Compile Include="CustomControlClass\Custom_WorkFlowHistoryCell.cs" />
+    <Compile Include="ViewControllers\ListUserViewMultiChoice.cs" />
+    <Compile Include="ViewControllers\ListUserViewMultiChoice.designer.cs">
+      <DependentUpon>ListUserViewMultiChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComponentWorkFlowRelate.cs" />
+    <Compile Include="Components\ControlWorkFlowRelated_draft.cs" />
+    <Compile Include="ViewControllers\AuthenticationOTPView.cs" />
+    <Compile Include="ViewControllers\AuthenticationOTPView.designer.cs">
+      <DependentUpon>AuthenticationOTPView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FormCalendarChoice.cs" />
+    <Compile Include="ViewControllers\FormCalendarChoice.designer.cs">
+      <DependentUpon>FormCalendarChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\ListUserOrGroupView.cs" />
+    <Compile Include="ViewControllers\ListUserOrGroupView.designer.cs">
+      <DependentUpon>ListUserOrGroupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\UserGroup_CollectionCell.cs" />
+    <Compile Include="CustomControlClass\Custom_Header_CollectionKanBan.cs" />
+    <Compile Include="Components\ControlInputComments.cs" />
+    <Compile Include="Components\ControlDetails.cs" />
+    <Compile Include="CustomControlClass\Custom_ValueDetailsCell.cs" />
+    <Compile Include="Components\ControlInputTasks.cs" />
+    <Compile Include="CustomControlClass\Custom_TaskCell.cs" />
+    <Compile Include="CustomControlClass\Custom_TableTaskAssignment.cs" />
+    <Compile Include="CustomControlClass\Custom_TaskSessionHeader.cs" />
+    <Compile Include="CustomControlClass\Custom_GroupTaskCellView.cs" />
+    <Compile Include="CustomControlClass\Custom_TableTask.cs" />
+    <Compile Include="CustomControlClass\Custom_TableTaskCell.cs" />
+    <Compile Include="CustomControlClass\Custom_TableTaskHelper.cs" />
+    <Compile Include="IOSClass\BeanTaskDetail.cs" />
+    <Compile Include="CustomControlClass\AttachThumb_CollectionCell.cs" />
+    <Compile Include="CustomControlClass\Custom_attachFileThumb.cs" />
+    <Compile Include="ViewControllers\FormCommentView.cs" />
+    <Compile Include="ViewControllers\FormCommentView.designer.cs">
+      <DependentUpon>FormCommentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\Custom_AddFollowView.cs" />
+    <Compile Include="ViewControllers\FormCreateTaskView.cs" />
+    <Compile Include="ViewControllers\FormCreateTaskView.designer.cs">
+      <DependentUpon>FormCreateTaskView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\Custom_DateTimePickerView.cs" />
+    <Compile Include="ViewControllers\FormTaskDetails.cs" />
+    <Compile Include="ViewControllers\FormTaskDetails.designer.cs">
+      <DependentUpon>FormTaskDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\FormWFDetailsProperty.cs" />
+    <Compile Include="ViewControllers\FormWFDetailsProperty.designer.cs">
+      <DependentUpon>FormWFDetailsProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TemplateValueType.cs" />
+    <Compile Include="Components\ControlItemsChoice.cs" />
+    <Compile Include="CustomControlClass\Custom_AppStatusCategory.cs" />
+    <Compile Include="CustomControlClass\Custom_DuedateCategory.cs" />
+    <Compile Include="ViewControllers\BroadView.cs" />
+    <Compile Include="ViewControllers\BroadView.designer.cs">
+      <DependentUpon>BroadView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\Custom_WorkflowCategory.cs" />
+    <Compile Include="KanBanCustomClass\CustomKanBanDragCollection.cs" />
+    <Compile Include="KanBanCustomClass\CustomKanBanDropCollection.cs" />
+    <Compile Include="KanBanCustomClass\CustomKanbanTableView_Drag.cs" />
+    <Compile Include="KanBanCustomClass\CustomKanbanTableView_Drop.cs" />
+    <Compile Include="KanBanCustomClass\KanBanModel.cs" />
+    <Compile Include="KanBanCustomClass\Photo.cs" />
+    <Compile Include="KanBanCustomClass\PhotoAlbum.cs" />
+    <Compile Include="KanBanCustomClass\PhotoLibrary.cs" />
+    <Compile Include="KanBanCustomClass\UIImageViewExtensions.cs" />
+    <Compile Include="ViewControllers\KanBanView.cs" />
+    <Compile Include="ViewControllers\KanBanView.designer.cs">
+      <DependentUpon>KanBanView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControlClass\WorkFlowItem_CollectionCell.cs" />
+    <Compile Include="ViewControllers\MultiChoiceTableView.cs" />
+    <Compile Include="ViewControllers\MultiChoiceTableView.designer.cs">
+      <DependentUpon>MultiChoiceTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOSClass\ExtensionCopy.cs" />
+    <Compile Include="CustomControlClass\Custom_AppConditionCategory.cs" />
+    <Compile Include="CustomControlClass\Custom_QTLCHeader.cs" />
+    <Compile Include="ViewControllers\FollowListViewController.cs" />
+    <Compile Include="ViewControllers\FollowListViewController.designer.cs" />
+    <Compile Include="ViewControllers\RegisterViewController.designer.cs" />
+    <Compile Include="ViewControllers\LoginViewController.cs" />
+    <Compile Include="ViewControllers\LoginViewController.designer.cs" />
+    <Compile Include="ViewControllers\RegisterViewController.cs" />
+    <Compile Include="Users_cell.cs" />
+    <Compile Include="Users_cell.designer.cs">
+      <DependentUpon>Users_cell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainViewApp.cs" />
+    <Compile Include="MainViewApp.designer.cs">
+      <DependentUpon>MainViewApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestListViewApp.cs" />
+    <Compile Include="RequestListViewApp.designer.cs">
+      <DependentUpon>RequestListViewApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyRequestListViewApp.cs" />
+    <Compile Include="MyRequestListViewApp.designer.cs">
+      <DependentUpon>MyRequestListViewApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActionMoreApp.cs" />
+    <Compile Include="ActionMoreApp.designer.cs">
+      <DependentUpon>ActionMoreApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoreactionApp_cell.cs" />
+    <Compile Include="MoreactionApp_cell.designer.cs">
+      <DependentUpon>MoreactionApp_cell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView.cs" />
+    <Compile Include="ListView.designer.cs">
+      <DependentUpon>ListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginOptionViewController.cs" />
+    <Compile Include="LoginOptionViewController.designer.cs">
+      <DependentUpon>LoginOptionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOSClass\InterfaceProgram.cs" />
+    <Compile Include="ViewControllers\DeactivateAccView.cs" />
+    <Compile Include="ViewControllers\DeactivateAccView.designer.cs">
+      <DependentUpon>DeactivateAccView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\IMG_temp\img_hr.png" />
+    <BundleResource Include="Resources\IMG_temp\img_learning.png" />
+    <BundleResource Include="Resources\IMG_temp\img_recruitment.png" />
+    <BundleResource Include="Resources\IMG_temp\img_training.png" />
+    <BundleResource Include="Resources\IMG_temp\icon_Btn_action_4.png" />
+    <BundleResource Include="Resources\IMG_temp\icon_Btn_action_64.png" />
+    <BundleResource Include="Resources\IMG_temp\icon_Btn_action_101.png" />
+    <BundleResource Include="Resources\IMG_temp\icon_Btn_action_102.png" />
+    <BundleResource Include="Resources\IMG_temp\icon_Btn_action_256.png" />
+    <BundleResource Include="Resources\IMG_temp\2f2ff11d07f2836dfc4e9fa363d601a3.jpg" />
+    <BundleResource Include="Resources\Images\BPM_bg.png" />
+    <BundleResource Include="Resources\Images\BPM_bg_plus.jpg" />
+    <BundleResource Include="Resources\Images\BPM_bgX.png" />
+    <BundleResource Include="Resources\Images\Infinity_logo.png" />
+    <BundleResource Include="Resources\Images\logo_inApp_dark.png" />
+    <BundleResource Include="Resources\Images\img_iphone_lauchScreen.png" />
+    <BundleResource Include="Resources\Images\img_iphone_AdMenu.png" />
+    <BundleResource Include="Resources\Images\bg1.png" />
+    <BundleResource Include="Resources\Images\bg1.jpg" />
+    <BundleResource Include="Resources\Images\bgvnaBpm.png" />
+    <BundleResource Include="Resources\Images\img_iphone_lauchScreen_vna_logo-login.png" />
+    <BundleResource Include="Resources\Images\Background_longin_vna.jpg" />
+    <BundleResource Include="Resources\Images\img_iphone_lauchScreen_vna.png" />
+    <BundleResource Include="Resources\Images\img_iphone_lauchScreen_vna.jpg" />
+    <BundleResource Include="Resources\Images\img_iphone_lauchScreen_vna1.png" />
+    <BundleResource Include="icon_Star_off.png" />
+    <BundleResource Include="icon_Star_on.png" />
+    <BundleResource Include="Resources\Images\image_Login_WallExtension.png" />
+    <BundleResource Include="Resources\Images\img_vnaLogin.png" />
+    <BundleResource Include="Resources\Images\img_vnaPlane.png" />
+    <BundleResource Include="Resources\Images\img_vnaPlaneLogo.png" />
+    <BundleResource Include="Resources\Icons\button_close3x.png" />
+    <BundleResource Include="Resources\Icons\button_tick3x.png" />
+    <BundleResource Include="Resources\Icons\icon_Add.png" />
+    <BundleResource Include="Resources\Icons\icon_AppInfo30.png" />
+    <BundleResource Include="Resources\Icons\icon_Approve30_bk.png" />
+    <BundleResource Include="Resources\Icons\icon_Approve30.png" />
+    <BundleResource Include="Resources\Icons\icon_arrow_down_white.png" />
+    <BundleResource Include="Resources\Icons\icon_arrow_left.png" />
+    <BundleResource Include="Resources\Icons\icon_arrowUpDown_colapse.png" />
+    <BundleResource Include="Resources\Icons\icon_arrowUpDown.png" />
+    <BundleResource Include="Resources\Icons\icon_attach3x.png" />
+    <BundleResource Include="Resources\Icons\icon_attachDark.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_excel.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_other.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_pdf.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_photo.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_ppt.png" />
+    <BundleResource Include="Resources\Icons\icon_attachFile_txt.png" />
+    <BundleResource Include="Resources\Icons\icon_attachment.png" />
+    <BundleResource Include="Resources\Icons\icon_attachment2.png" />
+    <BundleResource Include="Resources\Icons\icon_attachment20.png" />
+    <BundleResource Include="Resources\Icons\icon_avatar_temp.png" />
+    <BundleResource Include="Resources\Icons\icon_avatar32.png" />
+    <BundleResource Include="Resources\Icons\icon_avatar64.png" />
+    <BundleResource Include="Resources\Icons\icon_back3x.png" />
+    <BundleResource Include="Resources\Icons\icon_back20.png" />
+    <BundleResource Include="Resources\Icons\icon_backRotation.png" />
+    <BundleResource Include="Resources\Icons\icon_bell30.png" />
+    <BundleResource Include="Resources\Icons\icon_Board30.png" />
+    <BundleResource Include="Resources\Icons\icon_broad_new.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_1.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_2.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_3.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_4.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_5.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_6.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_7.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_8.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_9.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_10.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_11.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_12.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_51.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_54.png" />
+    <BundleResource Include="Resources\Icons\icon_Btn_action_more.png" />
+    <BundleResource Include="Resources\Icons\icon_BuyBack40.png" />
+    <BundleResource Include="Resources\Icons\icon_calendar.png" />
+    <BundleResource Include="Resources\Icons\icon_camera1.png" />
+    <BundleResource Include="Resources\Icons\icon_cancel.png" />
+    <BundleResource Include="Resources\Icons\icon_cellphone_iphone.png" />
+    <BundleResource Include="Resources\Icons\icon_check_bk.png" />
+    <BundleResource Include="Resources\Icons\icon_check.png" />
+    <BundleResource Include="Resources\Icons\icon_clipboard3x.png" />
+    <BundleResource Include="Resources\Icons\icon_clock_25.png" />
+    <BundleResource Include="Resources\Icons\icon_close_circle_red.png" />
+    <BundleResource Include="Resources\Icons\icon_close_red_userOrGroup.png" />
+    <BundleResource Include="Resources\Icons\icon_close_red.png" />
+    <BundleResource Include="Resources\Icons\icon_close.png" />
+    <BundleResource Include="Resources\Icons\icon_close25.png" />
+    <BundleResource Include="Resources\Icons\icon_closeRed.png" />
+    <BundleResource Include="Resources\Icons\icon_closeX.png" />
+    <BundleResource Include="Resources\Icons\icon_colapse.png" />
+    <BundleResource Include="Resources\Icons\icon_collapse_attach.png" />
+    <BundleResource Include="Resources\Icons\icon_collapse.png" />
+    <BundleResource Include="Resources\Icons\icon_comment.png" />
+    <BundleResource Include="Resources\Icons\icon_Complete.png" />
+    <BundleResource Include="Resources\Icons\icon_complete30.png" />
+    <BundleResource Include="Resources\Icons\icon_create_task.png" />
+    <BundleResource Include="Resources\Icons\icon_createdNew_dark.png" />
+    <BundleResource Include="Resources\Icons\icon_createNew.png" />
+    <BundleResource Include="Resources\Icons\icon_currentDate.png" />
+    <BundleResource Include="Resources\Icons\icon_cxl30.png" />
+    <BundleResource Include="Resources\Icons\icon_deleteRed_calander.png" />
+    <BundleResource Include="Resources\Icons\icon_document_add.png" />
+    <BundleResource Include="Resources\Icons\icon_docx.png" />
+    <BundleResource Include="Resources\Icons\icon_download.png" />
+    <BundleResource Include="Resources\Icons\icon_dropDown_light.png" />
+    <BundleResource Include="Resources\Icons\icon_duedate.png" />
+    <BundleResource Include="Resources\Icons\icon_edit_white.png" />
+    <BundleResource Include="Resources\Icons\icon_edit.png" />
+    <BundleResource Include="Resources\Icons\icon_expand_acttach.png" />
+    <BundleResource Include="Resources\Icons\icon_expand2.png" />
+    <BundleResource Include="Resources\Icons\icon_favorite_off.png" />
+    <BundleResource Include="Resources\Icons\icon_favorite_on.png" />
+    <BundleResource Include="Resources\Icons\icon_file_blank.png" />
+    <BundleResource Include="Resources\Icons\icon_fileMode30.png" />
+    <BundleResource Include="Resources\Icons\icon_filter_broad.png" />
+    <BundleResource Include="Resources\Icons\icon_filter.png" />
+    <BundleResource Include="Resources\Icons\icon_flag.png" />
+    <BundleResource Include="Resources\Icons\icon_formMode30.png" />
+    <BundleResource Include="Resources\Icons\icon_forward.png" />
+    <BundleResource Include="Resources\Icons\icon_group.png" />
+    <BundleResource Include="Resources\Icons\icon_home30.png" />
+    <BundleResource Include="Resources\Icons\icon_image.png" />
+    <BundleResource Include="Resources\Icons\icon_inprogress30.png" />
+    <BundleResource Include="Resources\Icons\icon_key.png" />
+    <BundleResource Include="Resources\Icons\icon_keyNew.png" />
+    <BundleResource Include="Resources\Icons\icon_language30.png" />
+    <BundleResource Include="Resources\Icons\icon_learn_temp.png" />
+    <BundleResource Include="Resources\Icons\icon_like.png" />
+    <BundleResource Include="Resources\Icons\icon_link.png" />
+    <BundleResource Include="Resources\Icons\icon_lock20.png" />
+    <BundleResource Include="Resources\Icons\icon_more.png" />
+    <BundleResource Include="Resources\Icons\icon_more30.png" />
+    <BundleResource Include="Resources\Icons\icon_myRequest30_bk.png" />
+    <BundleResource Include="Resources\Icons\icon_myRequest30.png" />
+    <BundleResource Include="Resources\Icons\icon_next_catagory.png" />
+    <BundleResource Include="Resources\Icons\icon_next.png" />
+    <BundleResource Include="Resources\Icons\icon_noti_addnewItem.png" />
+    <BundleResource Include="Resources\Icons\icon_noti_newItem.png" />
+    <BundleResource Include="Resources\Icons\icon_noti25.png" />
+    <BundleResource Include="Resources\Icons\icon_notiAttachNew.png" />
+    <BundleResource Include="Resources\Icons\icon_pdf.png" />
+    <BundleResource Include="Resources\Icons\icon_photo_library.png" />
+    <BundleResource Include="Resources\Icons\icon_point_gray.png" />
+    <BundleResource Include="Resources\Icons\icon_point_green.png" />
+    <BundleResource Include="Resources\Icons\icon_point_orange.png" />
+    <BundleResource Include="Resources\Icons\icon_previous_catagory.png" />
+    <BundleResource Include="Resources\Icons\icon_printer.png" />
+    <BundleResource Include="Resources\Icons\icon_progress.png" />
+    <BundleResource Include="Resources\Icons\icon_progressStep30.png" />
+    <BundleResource Include="Resources\Icons\icon_qtlc_subStep.png" />
+    <BundleResource Include="Resources\Icons\icon_recycleRed.png" />
+    <BundleResource Include="Resources\Icons\icon_reject30.png" />
+    <BundleResource Include="Resources\Icons\icon_requestDefault30.png" />
+    <BundleResource Include="Resources\Icons\icon_saleHouse40.png" />
+    <BundleResource Include="Resources\Icons\icon_save.png" />
+    <BundleResource Include="Resources\Icons\icon_Search.png" />
+    <BundleResource Include="Resources\Icons\Icon_search30.png" />
+    <BundleResource Include="Resources\Icons\icon_send.png" />
+    <BundleResource Include="Resources\Icons\icon_share_white.png" />
+    <BundleResource Include="Resources\Icons\icon_share.png" />
+    <BundleResource Include="Resources\Icons\icon_signout30.png" />
+    <BundleResource Include="Resources\Icons\icon_Star_off.png" />
+    <BundleResource Include="Resources\Icons\icon_Star_on.png" />
+    <BundleResource Include="Resources\Icons\icon_star.png" />
+    <BundleResource Include="Resources\Icons\icon_Star3x.png" />
+    <BundleResource Include="Resources\Icons\icon_swipe_delete_white.png" />
+    <BundleResource Include="Resources\Icons\icon_swipe_delete.png" />
+    <BundleResource Include="Resources\Icons\icon_tick.png" />
+    <BundleResource Include="Resources\Icons\icon_tick20.png" />
+    <BundleResource Include="Resources\Icons\icon_tinhtrang.png" />
+    <BundleResource Include="Resources\Icons\icon_trangthai.png" />
+    <BundleResource Include="Resources\Icons\icon_user_25.png" />
+    <BundleResource Include="Resources\Icons\icon_user_temp.jpeg" />
+    <BundleResource Include="Resources\Icons\icon_User.png" />
+    <BundleResource Include="Resources\Icons\icon_user20.png" />
+    <BundleResource Include="Resources\Icons\icon_word.png" />
+    <BundleResource Include="Resources\Icons\icon_x22.png" />
+    <BundleResource Include="Resources\Icons\icon_xlsx.png" />
+    <BundleResource Include="Resources\Icons\icon-StepActive.png" />
+    <BundleResource Include="Resources\Icons\iconcalendar_choice.png" />
+    <BundleResource Include="Resources\Icons\logoAppPush.png" />
+    <BundleResource Include="Resources\Icons\thumb_excel.jpg" />
+    <BundleResource Include="Resources\Icons\thumb_excel.png" />
+    <BundleResource Include="Resources\Icons\thumb_img.png" />
+    <BundleResource Include="Resources\Icons\thumb_pdf.png" />
+    <BundleResource Include="Resources\Icons\thumb_ppt.png" />
+    <BundleResource Include="Resources\Icons\thumb_word.png" />
+    <BundleResource Include="Resources\Icons\icon_back.png" />
+    <BundleResource Include="Resources\Icons\icon_follow.png" />
+    <BundleResource Include="Resources\Icons\icon_password.png" />
+    <BundleResource Include="Resources\Icons\icon_userName.png" />
+    <BundleResource Include="Resources\Icons\icon_vnaEmail.png" />
+    <BundleResource Include="Resources\Icons\icon_vnaFacebook.png" />
+    <BundleResource Include="Resources\Icons\icon_vnaLogoBlue.png" />
+    <BundleResource Include="Resources\Icons\icon_vnaPhoneNum.png" />
+    <BundleResource Include="Resources\Icons\icon_vnaSignUpEmail.png" />
+    <BundleResource Include="Resources\Icons\icon_signout.png" />
+    <BundleResource Include="Resources\Icons\icon_deactivateUser.png" />
+    <BundleResource Include="Resources\Images\logo_vna_skyteam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\anhnen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\background_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\background_start_414.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\background_start_test.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </BundleResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\lauchscreen350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\lauchscreen350_backblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\logo_VT_300_134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\logo_VT_300_134_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\logo_white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\logo_white350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_120-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\iconappBPMS_1024_noalpha.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-6.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-7.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-8.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-9.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-9-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-11.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-2-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-12.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-6-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-2-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-8-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-15.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-16.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024-17.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Intranet.appiconset\LOGO_white1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\80-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\120-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\VNA.appiconset\1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="Resources\IMG_temp\" />
+    <Folder Include="Assets.xcassets\Intranet.appiconset\" />
+    <Folder Include="KanBanCustomClass\" />
+    <Folder Include="Assets.xcassets\VNA.appiconset\" />
+    <Folder Include="Resources\Icons\" />
+  </ItemGroup>
+  <Import Project="..\BPMOPMobile\BPMOPMobile.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>

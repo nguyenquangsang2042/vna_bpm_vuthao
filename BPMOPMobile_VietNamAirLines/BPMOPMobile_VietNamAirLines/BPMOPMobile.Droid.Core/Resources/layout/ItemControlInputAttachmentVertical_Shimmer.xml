@@ -1,0 +1,74 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="10"
+        android:gravity="center_vertical">
+        <View
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/textcornerred"
+            android:backgroundTint="@color/clGray"/>
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5.5"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="100dp"
+                android:background="@drawable/textcornerred"
+                android:backgroundTint="@color/clGray"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textcornerred"
+                android:backgroundTint="@color/clGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/textcornerred"
+                android:backgroundTint="@color/clGray"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textcornerred"
+                android:backgroundTint="@color/clGray"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/background_light">
+	<RelativeLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1"
+		android:background="@android:color/background_light"
+		android:padding="10dp">
+		<refractored.controls.CircleImageView
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:id="@+id/img_ItemListChooseUser_Avata"
+			android:backgroundTint="#00000000"
+			android:tint="#00000000"
+			app:civ_border_width="1dp"
+			app:civ_border_color="#ffffffff"
+			android:src="@mipmap/icon_avatar64"
+			android:layout_centerVertical="true"/>
+		<TextView
+			android:text="T"
+			android:layout_width="35dp"
+			android:layout_height="35dp"
+			android:id="@+id/tv_ItemListChooseUser_Avata"
+			android:gravity="center"
+			android:textColor="@android:color/background_light"
+			android:lines="1"
+			android:maxLines="1"
+			android:ellipsize="end"
+			android:layout_centerVertical="true"
+			android:fontFamily="@string/text_medium"
+			android:background="@mipmap/texttronblue"
+			android:foregroundGravity="center" />
+		<TextView
+			android:text="Text1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tv_ItemListChooseUser_Name"
+			android:textColor="@android:color/background_dark"
+			android:maxLines="1"
+			android:lines="1"
+			android:textSize="@dimen/textsize"
+			android:fontFamily="@string/text_light"
+			android:layout_toRightOf="@+id/img_ItemListChooseUser_Avata"
+			android:paddingTop="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tv_ItemListChooseUser_Email"
+			android:textColor="@android:color/background_dark"
+			android:maxLines="1"
+			android:lines="1"
+			android:ellipsize="end"
+			android:paddingBottom="5dp"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:fontFamily="@string/text_light"
+			android:textSize="@dimen/textsizeSmall"
+			android:layout_toRightOf="@+id/img_ItemListChooseUser_Avata"
+			android:layout_below="@+id/tv_ItemListChooseUser_Name"
+			android:layout_alignWithParentIfMissing="false" />
+	</RelativeLayout>
+</LinearLayout>

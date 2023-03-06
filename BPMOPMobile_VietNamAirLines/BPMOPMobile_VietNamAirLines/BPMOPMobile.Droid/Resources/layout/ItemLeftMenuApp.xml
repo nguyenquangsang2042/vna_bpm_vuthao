@@ -1,0 +1,39 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ln_ItemLeftMenuApp_All">
+        <ImageView
+            android:src="@drawable/icon_ver3_app"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_ItemLeftMenuApp"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/clBottomDisable"
+            android:padding="11dp" />
+        <TextView
+            android:text="Ứng dụng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_ItemLeftMenuApp_Title"
+            android:gravity="center_vertical"
+            android:textColor="@color/clBottomDisable"
+            android:textSize="@dimen/text12"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

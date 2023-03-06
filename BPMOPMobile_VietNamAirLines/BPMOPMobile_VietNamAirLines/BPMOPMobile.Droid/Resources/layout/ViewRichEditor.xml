@@ -1,0 +1,289 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="10"
+        android:gravity="center_vertical">
+        <ImageView
+            android:src="@drawable/icon_tab_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:tint="@color/clViolet"
+            android:padding="15dp"
+            android:id="@+id/img_ViewRichEditor_Back" />
+        <TextView
+            android:text="Text Editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/clViolet"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="10"
+            android:id="@+id/tv_ViewRichEditor_Title"/>
+        <ImageView
+            android:src="@drawable/icon_check"
+            android:tint="@color/clActionGreen"
+            android:padding="7dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_ViewRichEditor_Accept"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+        <ImageView
+            android:src="@drawable/icon_close"
+            android:tint="@color/clRed"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_ViewRichEditor_Close"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/view1"
+        android:background="@color/clGrayNavigator2"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_undo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_undo"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_redo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_redo"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_bold"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_bold"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_italic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_italic"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_subscript"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_subscript"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_superscript"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_superscript"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_strikethrough"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_strikethrough"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_underline"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_underline"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h1"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h2"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h3"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h4"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h5"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_heading6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_h6"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_txt_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_txt_color"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_bg_color"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_bg_color"/>
+
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_indent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_indent"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_outdent"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_outdent"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_align_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_justify_left"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_align_center"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_justify_center"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_align_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_justify_right"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_insert_bullets"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_bullets"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_insert_numbers"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_numbers"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_blockquote"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_blockquote"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_insert_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_insert_image"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_insert_link"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@drawable/rich_editor_insert_link"/>
+
+            <ImageView
+                android:id="@+id/img_ViewRichEditor_insert_checkbox"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:src="@android:drawable/checkbox_on_background"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/editor_ViewRichEditor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"/>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/clGrayNavigator2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="HTML Preview"
+        android:textColor="@color/clViolet"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="@dimen/text14"/>
+    <TextView
+        android:id="@+id/preview_ViewRichEditor"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_weight="2"
+        android:textSize="@dimen/text14"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

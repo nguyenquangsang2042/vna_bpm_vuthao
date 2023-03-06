@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#2c3e50</color>
+  <color name="colorPrimaryDark">#1B3147</color>
+  <color name="colorAccent">#3498db</color>
+
+  <color name="clViolet">#415086</color>
+  <color name="clVioletBackground">#353F66</color>
+  <color name="clWhite">#ffffff</color>
+  <color name="clBlack">#000000</color>
+  <color name="clGrayNavigator">#F5F5F5</color>
+  <color name="clGrayNavigator2">#C4C4C4</color>
+  <color name="clGraytitle">#686868</color>
+  <color name="clGraylight">#f4f4f4</color>
+  <color name="clGray">#E5E5E5</color>
+  <color name="clRed">#b3000a</color>
+  <color name="clRedMain">#e63a34</color>
+  <color name="clGreen">#3FA800</color>
+  <color name="clBlue">#335FB3</color>
+  <color name="clBlue1">#0060af</color>
+  <color name="clBlue2">#0b61ae</color>
+  <color name="clYellow">#FFEC00</color>
+  <color name="clOrange">#FF7D03</color>
+  <color name="clPink">#ef9a9a</color>
+
+  <color name="clHint">#aaaaaa</color>
+  <color name="clTransparent">#70000000</color>
+  <color name="clLeftMenu">#0e1e2f</color>
+  <color name="clTextEnable">#0961ae</color>
+  <color name="clBottomEnable">#3360B4</color>
+  <color name="clItemListEnable">#F6F9FF</color>
+  
+  <color name="clBottomDisable">#666666</color> 
+  <color name="clMainLightBlue">#E3E9F9</color>  
+  <color name="clTextSmall">#888888</color>
+  <color name="clIcon">#fcb22f</color>
+</resources>

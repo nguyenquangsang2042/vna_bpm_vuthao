@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item android:state_checked="false"
+        android:layout_width="80dp"
+         android:layout_height="80dp"
+        
+ android:drawable="@drawable/icon_squareUnChecked40" />
+  <item android:state_checked="true"
+    android:layout_width="80dp"
+         android:layout_height="80dp"
+      android:drawable="@drawable/icon_squareChecked40"
+        />
+
+</selector>

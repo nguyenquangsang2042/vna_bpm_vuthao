@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/textcornerstrokegraywhitesolid2">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:text="Text Quy trình / Công việc liên kết"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/clViolet"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@+id/recy_ViewListWorkflow_Action"
+                android:id="@+id/tv_PopupControlLinkedWorkflowDetailWindow_Title"/>
+            <ImageView
+                android:src="@drawable/icon_tab_createworkflow004"
+                android:padding="10dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/img_PopupControlLinkedWorkflowDetailWindow_Close"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_PopupControlLinkedWorkflowDetailWindow" />
+    </LinearLayout>
+</LinearLayout>

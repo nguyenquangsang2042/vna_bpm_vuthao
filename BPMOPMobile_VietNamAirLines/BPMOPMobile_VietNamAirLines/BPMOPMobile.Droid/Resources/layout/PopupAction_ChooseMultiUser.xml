@@ -1,0 +1,99 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/textcornerwhite2">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:id="@+id/ln_PopupAction_ChooseMultiUser"
+        android:weightSum="10"
+        android:visibility="visible">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/icon_back_new"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="12dp"
+                android:id="@+id/img_PopupAction_ChooseMultiUser_Cancel" />
+            <ImageView
+                android:src="@drawable/icon_bpm_btn_action_1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="10dp"
+                android:tint="@color/clActionGreen"
+                android:layout_alignParentRight="true"
+                android:id="@+id/img_PopupAction_ChooseMultiUser_Accept" />
+            <TextView
+                android:text="Chia sẻ cho người / nhóm khác xem yêu cầu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/clBlack"
+                android:textSize="@dimen/text15"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_PopupAction_ChooseMultiUser_title"
+                android:layout_toRightOf="@+id/img_PopupAction_ChooseMultiUser_Cancel"
+                android:layout_toLeftOf="@+id/img_PopupAction_ChooseMultiUser_Accept"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clGrayNavigator2"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/clGrayNavigator"
+                android:gravity="center_vertical">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_PopupAction_ChooseMultiUser_Comment"
+                    android:fontFamily="@font/fontarial"
+                    android:background="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:lines="5"
+                    android:padding="10dp"
+                    android:maxLines="5"
+                    android:gravity="top"
+                    android:textColorHint="@color/clGraytitle"
+                    android:hint="Nhập ý kiến"
+                    android:inputType="text"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/clGrayNavigator2"/>
+            <android.support.v7.widget.RecyclerView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:id="@+id/recy_PopupAction_ChooseMultiUser" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

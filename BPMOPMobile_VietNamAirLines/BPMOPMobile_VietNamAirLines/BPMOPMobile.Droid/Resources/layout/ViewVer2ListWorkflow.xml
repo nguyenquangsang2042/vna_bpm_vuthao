@@ -1,0 +1,197 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/ln_ViewVer2ListWorkflow_All">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/rela_ViewVer2ListWorkflow_Toolbar"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/clWhite">
+        <ImageView
+            android:src="@drawable/icon_ver3_filter"
+            android:padding="10dp"
+            android:tint="@color/clBottomDisable"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_ViewVer2ListWorkflow_Filter" />
+        <TextView
+            android:text="Việc đến tôi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_ViewVer2ListWorkflow_Name"
+            android:textColor="@color/clVer2BlueMain"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1" />
+        <refractored.controls.CircleImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_ViewVer2ListWorkflow_Avata"
+            android:backgroundTint="#00000000"
+            android:tint="#00000000"
+            android:src="@drawable/icon_avatar64"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/clGrayNavigator"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ln_ViewVer2ListWorkflow_Content">
+
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:id="@+id/rela_ViewVer2ListWorkflow_Search"
+                android:background="@drawable/textcornergray"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                <ImageView
+                    android:src="@drawable/icon_ver2_search"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_ViewVer2ListWorkflow_Search"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/clBottomDisable"
+                    android:padding="5dp"/>
+                <ImageView
+                    android:src="@drawable/icon_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_ViewVer2ListWorkflow_Search_Delete"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:tint="@color/clBottomDisable"
+                    android:padding="7dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/edt_ViewVer2ListWorkflow_Search"
+                    android:layout_toLeftOf="@+id/img_ViewVer2ListWorkflow_Search_Delete"
+                    android:layout_toRightOf="@+id/img_ViewVer2ListWorkflow_Search"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/text16"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:textColor="@android:color/background_dark"
+                    android:hint="Tìm kiếm..."
+                    android:textColorHint="@color/clBottomDisable"
+                    android:background="@android:color/transparent" />
+
+            </RelativeLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/swipe_ViewVer2ListWorkflow">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="10">
+                    <android.support.v7.widget.RecyclerView
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_weight="10"
+                        android:id="@+id/recy_ViewVer2ListWorkflow"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:scrollbarSize="1dp"
+                        android:nestedScrollingEnabled="true"
+                        android:visibility="visible"/>
+                    <LinearLayout
+                        android:id="@+id/ln_ViewVer2ListWorkflow_NoData"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:background="@color/clWhite"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:layout_weight="10">
+                        <TextView
+                            android:text="Không có dữ liệu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_ViewVer2ListWorkflow_NoData"
+                            android:fontFamily="@string/text_light"
+                            android:textColor="@color/clBottomDisable"
+                            android:gravity="center"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/text18"
+                            android:padding="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/ln_ViewVer2ListWorkflow_BottomNavigation"
+                        android:background="@color/clGrayNavigator">
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ln_ViewVer2ListWorkflow_BlackFilter"
+            android:background="@color/clBlack"
+            android:alpha="0.5"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ln_ViewVer2ListWorkflow_DisablePager"
+            android:background="@color/transparent"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BPMOPMobile.iPad", "BPMOPMobile.iPad.csproj", "{01518802-CEBC-4693-B128-8554A77248BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01518802-CEBC-4693-B128-8554A77248BE}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{01518802-CEBC-4693-B128-8554A77248BE}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{01518802-CEBC-4693-B128-8554A77248BE}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{01518802-CEBC-4693-B128-8554A77248BE}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{01518802-CEBC-4693-B128-8554A77248BE}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{01518802-CEBC-4693-B128-8554A77248BE}.Debug|iPhone.Build.0 = Debug|iPhone
+		{01518802-CEBC-4693-B128-8554A77248BE}.Release|iPhone.ActiveCfg = Release|iPhone
+		{01518802-CEBC-4693-B128-8554A77248BE}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal

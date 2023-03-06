@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "607261427171",
+    "project_id": "vna-bpm",
+    "storage_bucket": "vna-bpm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607261427171:android:5c3eff050143b15fcd0cd6",
+        "android_client_info": {
+          "package_name": "com.vuthao.BPM.VNABPM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607261427171-fnbe4s1cjn27dfp2c2anidm03mpmoets.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRhLyk6XkHundNs0GRzK50OZ6drtn8UGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607261427171-fnbe4s1cjn27dfp2c2anidm03mpmoets.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

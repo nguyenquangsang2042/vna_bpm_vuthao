@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="10"
+        android:id="@+id/ln_ItemExpandCreateWorkflow">
+        <android.support.v7.widget.CardView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_weight="10"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp">
+            <RelativeLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:src="@drawable/icon_testgroupboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:id="@+id/img_ItemExpandCreateWorkflow_Avatar" />
+                <TextView
+                    android:text="Text Phòng IT đăng ký làm việc ngoài giờ vào cuối tuần tại tháng 9/2019 sau đó đi OT sấp mặt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="top"
+                    android:textSize="@dimen/text14"
+                    android:textColor="@color/clBlack"
+                    android:maxLines="3"
+                    android:lines="3"
+                    android:ellipsize="end"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="4"
+                    android:visibility="gone"
+                    android:id="@+id/tv_ItemExpandCreateWorkflow_Avatar" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:text="Text Quy trình đào tạo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ItemExpandCreateWorkflow_Title"
+            android:layout_centerVertical="true"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text14"
+            android:gravity="center"
+            android:maxLines="2"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+</LinearLayout>

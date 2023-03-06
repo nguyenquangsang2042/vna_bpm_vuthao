@@ -1,0 +1,130 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:weightSum="2"
+        android:id="@+id/ln_PagerChildAppHomePage_Condition">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ln_PagerChildAppHomePage_DangXuLy">
+            <TextView
+                android:text="Đang xử lý"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold"
+                android:textColor="@color/clBottomEnable"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/tv_PagerChildAppHomePage_DangXuLy" />
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/clBottomEnable"
+                android:id="@+id/vw_PagerChildAppHomePage_DangXuLy"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/ln_PagerChildAppHomePage_DaXuLy">
+            <TextView
+                android:text="Đã xử lý"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text16"
+                android:textColor="@color/clBottomDisable"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/tv_PagerChildAppHomePage_DaXuLy" />
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/clBottomEnable"
+                android:id="@+id/vw_PagerChildAppHomePage_DaXuLy"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_weight="10"
+        app:cardCornerRadius="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recy_PagerChildAppHomePage"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:scrollbarSize="1dp"
+                android:nestedScrollingEnabled="true"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/ln_PagerChildAppHomePage_NotData"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/clWhite"
+                android:gravity="center"
+                android:visibility="gone">
+                <TextView
+                    android:text="Không có dữ liệu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PagerChildAppHomePage_NotData"
+                    android:textColor="@color/clBottomDisable"
+                    android:gravity="center"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/text18"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

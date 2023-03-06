@@ -1,0 +1,264 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/background_light">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rela_ViewChildAppKanBan_Toolbar"
+            android:background="@color/clWhite">
+            <ImageView
+                android:src="@drawable/icon_back30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_ViewChildAppKanBan_Back"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable" />
+            <ImageView
+                android:src="@drawable/icon_ver3_filter"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/img_ViewChildAppKanBan_Filter"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:tint="@color/clBottomDisable" />
+            <ImageView
+                android:src="@drawable/icon_ver2_search"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/img_ViewChildAppKanBan_ShowSearch"
+                android:layout_toLeftOf="@+id/img_ViewChildAppKanBan_Filter"
+                android:padding="12dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable" />
+            <TextView
+                android:text="BOARD"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_ViewChildAppKanBan_Name"
+                android:textColor="@color/clVer2BlueMain"
+                android:layout_toRightOf="@+id/img_ViewChildAppKanBan_Back"
+                android:layout_toLeftOf="@+id/img_ViewChildAppKanBan_ShowSearch"
+                android:textSize="@dimen/text16"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/clGrayNavigator"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipe_ViewChildAppKanBan">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:minWidth="0px"
+                    android:minHeight="0px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:id="@+id/ln_ViewChildAppKanBan_SubTitle"
+                        android:background="@color/clGrayNavigator"
+                        android:visibility="gone"
+                        android:gravity="center">
+                        <ImageView
+                            android:src="@drawable/icon_ver3_back"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/img_ViewChildAppKanBan_SubTitle_Previous"
+                            android:padding="11dp"
+                            android:tint="@color/clVer2BlueMain"
+                            android:rotation="180"/>
+                        <TextView
+                            android:text="Text hợp đồng phát triển dây chuyền sản xuất sản phẩm nông nghiệp thế hệ mới"
+                            android:layout_weight="1"
+                            android:layout_width="0.1dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/tv_ViewChildAppKanBan_SubTitle"
+                            android:textColor="@color/clBlack"
+                            android:textSize="@dimen/text14"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:gravity="center"/>
+                        <ImageView
+                            android:src="@drawable/icon_ver3_back"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/img_ViewChildAppKanBan_SubTitle_Next"
+                            android:padding="11dp"
+                            android:tint="@color/clVer2BlueMain"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="10"
+                        android:visibility="gone"
+                        android:id="@+id/ln_ViewChildAppKanBan_Search">
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="5dp"
+                            android:layout_margin="0.5dp"
+                            android:id="@+id/card_ViewBoard_Search"
+                            android:visibility="visible">
+                            <RelativeLayout
+                                android:minWidth="25px"
+                                android:minHeight="25px"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:background="@drawable/textcornergray"
+                                android:backgroundTint="@color/clGraySearchUser">
+                                <ImageView
+                                    android:src="@drawable/icon_ver2_search"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_centerVertical="true"
+                                    android:tint="@color/clBottomDisable"
+                                    android:id="@+id/img_ViewChildAppKanBan_Search"
+                                    android:padding="7dp"
+                                    android:layout_marginLeft="5dp"/>
+                                <ImageView
+                                    android:src="@drawable/icon_delete"
+                                    android:layout_width="30dp"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/img_ViewChildAppKanBan_Search_Delete"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:tint="@color/clBottomDisable"
+                                    android:layout_marginRight="3dp"
+                                    android:padding="7dp" />
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/edt_ViewChildAppKanBan_Search"
+                                    android:layout_toLeftOf="@+id/img_ViewChildAppKanBan_Search_Delete"
+                                    android:layout_toRightOf="@+id/img_ViewChildAppKanBan_Search"
+                                    android:gravity="center_vertical"
+                                    android:textSize="@dimen/text16"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="5dp"
+                                    android:lines="1"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:textStyle="italic"
+                                    android:inputType="text"
+                                    android:textColor="@android:color/background_dark"
+                                    android:hint="Tìm kiếm..."
+                                    android:textColorHint="@color/clBottomDisable"
+                                    android:background="@android:color/transparent" />
+                            </RelativeLayout>
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:id="@+id/view1"
+                    android:background="@color/clGrayNavigator2"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_weight="10"
+                        android:id="@+id/rela_ViewChildAppKanBan_Board">
+                        <BPMOPMobile.Droid.Class.MyCustomBoardView
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/boardView_ViewChildAppKanBan"
+                            android:visibility="visible"
+                            android:background="@color/clWhite"/>
+                        <TextView
+                            android:text="Không có dữ liệu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/tv_ViewChildAppKanBan_NoData"
+                            android:fontFamily="@string/text_light"
+                            android:textColor="@color/clBottomDisable"
+                            android:gravity="center"
+                            android:textStyle="italic"
+                            android:visibility="gone"
+                            android:textSize="@dimen/text18"
+                            android:padding="10dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/clGrayNavigator2"/>
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/ln_ViewChildAppKanBan_BottomNavigation"
+                    android:weightSum="4"
+                    android:background="@color/clGrayNavigator">
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</LinearLayout>

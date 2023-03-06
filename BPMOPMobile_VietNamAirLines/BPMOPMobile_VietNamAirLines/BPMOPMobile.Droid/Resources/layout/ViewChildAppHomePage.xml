@@ -1,0 +1,147 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clWhite"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clWhite"
+        android:id="@+id/ln_ViewChildAppHomePage_Toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/relativeLayout1">
+            <ImageView
+                android:src="@drawable/icon_back30"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginRight="5dp"
+                android:tint="@color/clBottomDisable"
+                android:id="@+id/img_ViewChildAppHomePage_Back"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:text="Quy trình tuyển dụng Test"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_ViewChildAppHomePage_TrangChu"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/img_ViewChildAppHomePage_Back"
+                android:layout_toLeftOf="@+id/img_ViewChildAppHomePage_Filter"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <ImageView
+                android:src="@drawable/icon_ver3_filter"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="12dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true"
+                android:tint="@color/clBottomDisable"
+                android:id="@+id/img_ViewChildAppHomePage_Filter" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/drawable_tabbackground">
+                <TextView
+                    android:text="Đến tôi (0)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ViewChildAppHomePage_VDT"
+                    android:background="@drawable/drawable_tabselected"
+                    android:textColor="@color/clVer2BlueMain"
+                    android:textSize="@dimen/text14"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"/>
+                <TextView
+                    android:text="Tôi bắt đầu (0)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_ViewChildAppHomePage_VTBD"
+                    android:background="@drawable/drawable_tabnotselected"
+                    android:textColor="@color/clWhite"
+                    android:textSize="@dimen/text14"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ViewChildAppHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/clGrayNavigator">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ln_ViewChildAppHomePage_Content"
+                android:weightSum="10">
+                <BPMOPMobile.Droid.Class.MyCustomViewPager
+                    android:id="@+id/pager_ViewChildAppHomePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/clGrayNavigator"
+                    android:id="@+id/ln_ViewChildAppHomePage_BottomNavigation" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ln_ViewChildAppHomePage_DisablePager"
+                android:background="@color/transparent"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,102 @@
+﻿
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:id="@+id/ln_ItemControlAttachmentImport">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/ln_ItemControlAttachmentImport_Name">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/icon_pdffile"
+                    android:padding="2dp"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/img_ItemControlAttachmentImport_Extension" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp">
+                    <TextView
+                        android:text="Text Hợp đồng.pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="@color/clBlack"
+                        android:textSize="@dimen/text14"
+                        android:id="@+id/tv_ItemControlAttachmentImport_Name" />
+                    <TextView
+                        android:text="Text 8.78 MB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:textColor="@color/clGraytitle"
+                        android:textSize="@dimen/text12"
+                        android:id="@+id/tv_ItemControlAttachmentImport_Size" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.5"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/ln_ItemControlAttachmentImport_Category">
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:textColor="@color/clBlack"
+                android:textSize="@dimen/text13"
+                android:id="@+id/tv_ItemControlAttachmentImport_Category" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:id="@+id/ln_ItemControlAttachmentImport_Delete">
+            <ImageView
+                android:src="@drawable/icon_tab_delete_2"
+                android:tint="@color/clActionRed"
+                android:padding="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_ItemControlAttachmentImport_Delete" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

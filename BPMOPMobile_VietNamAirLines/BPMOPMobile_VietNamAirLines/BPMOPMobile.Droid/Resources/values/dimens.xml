@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="text25">25sp</dimen>
+  <dimen name="text22">22sp</dimen>
+  <dimen name="text20">20sp</dimen>
+  <dimen name="text19">19sp</dimen>
+  <dimen name="text18">18sp</dimen>
+  <dimen name="text17">17sp</dimen>
+  <dimen name="text16">16sp</dimen>
+  <dimen name="text15">15sp</dimen>
+  <dimen name="text14">14sp</dimen>
+  <dimen name="text13">13sp</dimen>
+  <dimen name="text12">12sp</dimen>
+  <dimen name="text11">11sp</dimen>
+  <dimen name="text10">10sp</dimen>
+
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+  <dimen name="textsize">14sp</dimen>
+  <dimen name="textsizeSmall">13sp</dimen>
+  <dimen name="titlesize">16sp</dimen>
+  <dimen name="number">35dp</dimen>
+  <dimen name="padding_default">1dp</dimen>
+</resources>

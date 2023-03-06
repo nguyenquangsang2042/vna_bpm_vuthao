@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:visible="true"
+       android:dither="true"
+       android:useLevel="false">
+
+  <solid android:color="@color/clGrayNavigator"></solid>
+  <corners android:radius="3dp"/>
+  <size android:width="40dp" android:height="25dp" />
+</shape>

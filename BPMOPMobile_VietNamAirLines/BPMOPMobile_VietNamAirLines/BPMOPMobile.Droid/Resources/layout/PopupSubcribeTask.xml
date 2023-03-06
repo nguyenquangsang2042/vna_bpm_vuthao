@@ -1,0 +1,44 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:background="@drawable/textcornerstrokesolidgray">
+
+            <ImageView
+                android:src="@drawable/icon_check"
+                android:padding="6dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:tint="@color/clGreen"
+                android:id="@+id/img_ViewDetailTask_TaskName" />
+            <TextView
+                android:text="Đặt theo dõi công việc này"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text18"
+                android:textColor="@color/clBlue"
+                android:id="@+id/tv_ViewDetailTask_TaskName"
+                android:layout_toRightOf="@+id/img_ViewDetailTask_TaskName"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

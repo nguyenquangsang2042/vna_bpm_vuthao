@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/textcornerwhite2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relativeLayout1">
+            <ImageView
+                android:src="@drawable/icon_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupActionComment_Close"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:tint="@color/clHint"
+                android:layout_centerVertical="false"
+                android:visibility="gone"/>
+            <TextView
+                android:text="Ý kiến"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupActionComment_YKien"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:textColor="@color/clBlack"
+                android:textSize="@dimen/text16"
+                android:visibility="visible" />
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_PopupActionComment_YKien"
+            android:background="@drawable/edtcornerstrokegray"
+            android:textSize="@dimen/text14"
+            android:padding="10dp"
+            android:gravity="top"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:hint="Vui lòng nhập ý kiến (*)"
+            android:minLines="6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:gravity="right"
+            android:id="@+id/ln_ChooseUser_Action"
+            android:paddingBottom="10dp">
+            <TextView
+                android:text="Thoát"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupActionComment_Huy"
+                android:textColor="@color/clRed"
+                android:textSize="@dimen/text16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp" />
+            <TextView
+                android:text="Hoàn tất"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_PopupActionComment_DongY"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/textcornerviolet2"
+                android:textSize="@dimen/text16"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

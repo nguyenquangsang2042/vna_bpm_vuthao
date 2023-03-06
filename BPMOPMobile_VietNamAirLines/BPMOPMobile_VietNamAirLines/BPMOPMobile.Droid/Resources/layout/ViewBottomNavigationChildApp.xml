@@ -1,0 +1,28 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/view1"
+        android:background="@color/clGrayNavigator2"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/clGrayNavigator">
+        <android.support.v7.widget.RecyclerView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:id="@+id/recy_ViewBottomNavigationChildApp" />
+    </LinearLayout>
+</LinearLayout>

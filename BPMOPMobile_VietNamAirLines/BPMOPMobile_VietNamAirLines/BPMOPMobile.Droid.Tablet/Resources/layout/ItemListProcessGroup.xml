@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="7dp">
+        <ImageView
+            android:src="@drawable/icon_circle"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="2dp"            
+            android:padding="0.5dp"
+            android:id="@+id/img_ItemListProcessGroup" />
+        <TextView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/textcircleviolet"
+            android:textSize="@dimen/text16"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="7dp"
+            android:gravity="center"
+            android:id="@+id/tv_ItemChildExpandListFlow_Avatar"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_ItemChildExpandListFlow_All"
+        android:layout_marginRight="2dp"
+        android:weightSum="10">
+        <TextView
+            android:text="Text Tạo phiếu đề xuất"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/clViolet"
+            android:textSize="@dimen/text14"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:id="@+id/tv_ItemListProcessGroup_Title"
+            android:layout_weight="10"/>
+        <TextView
+            android:text="Text Action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_ItemListProcessGroup_Status"
+            android:textColor="@android:color/background_dark"
+            android:lines="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/text12"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"/>
+    </LinearLayout>
+</LinearLayout>

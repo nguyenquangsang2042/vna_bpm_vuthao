@@ -1,0 +1,58 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="0px"
+        android:minHeight="0px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/view_ItemExpandDetailAttachFileGroup_Category"
+            android:background="@color/clGray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_ItemExpandDetailAttachFileGroup"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:text="Text Phiếu đề xuất (99+)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ItemExpandDetailAttachFileGroup_Title"
+            android:textColor="@color/clVer2BlueMain"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:src="@drawable/icon_back2"
+            android:tint="@color/clVer2BlueMain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:padding="8.5dp"
+            android:rotation="1"
+            android:layout_gravity="center"
+            android:id="@+id/img_ItemExpandDetailAttachFileGroup_Expand" />
+    </LinearLayout>
+
+</LinearLayout>

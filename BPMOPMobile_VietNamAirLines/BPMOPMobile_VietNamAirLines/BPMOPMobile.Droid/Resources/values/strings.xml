@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">BPMOP</string>
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
+  <string name="drawerOpen">Mở</string>
+  <string name="drawerClose">Đóng</string>
+  <string name="text_light">sans-serif-light</string>
+  <string name="text_medium">sans-serif-medium</string>
+  <string name="text_regular">sans-serif</string>
+
+</resources>

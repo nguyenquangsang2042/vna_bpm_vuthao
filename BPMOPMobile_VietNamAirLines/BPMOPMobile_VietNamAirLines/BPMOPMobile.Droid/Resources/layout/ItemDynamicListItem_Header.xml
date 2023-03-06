@@ -1,0 +1,49 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_ItemDynamicListItem_All"
+        android:padding="5dp">
+
+        <TextView
+            android:text="Text Hoàng Đăng Khoa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text16"
+            android:gravity="left"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:id="@+id/tv_ItemDynamicListItem_Header_Value"/>
+        <ImageView
+            android:src="@drawable/icon_ver2_star_checked"
+            android:padding="1dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_ItemDynamicListItem_Header_Favorite" />
+        <ImageView
+            android:src="@drawable/icon_ver2_flag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="1dp"
+            android:tint="@color/clRed"
+            android:id="@+id/img_ItemDynamicListItem_Header_Flag"/>
+        <ImageView
+            android:src="@drawable/icon_ver2_attach"
+            android:padding="3dp"
+            android:tint="@color/clGraytitle"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/img_ItemDynamicListItem_Header_AttachFile" />
+    </LinearLayout>
+</LinearLayout>

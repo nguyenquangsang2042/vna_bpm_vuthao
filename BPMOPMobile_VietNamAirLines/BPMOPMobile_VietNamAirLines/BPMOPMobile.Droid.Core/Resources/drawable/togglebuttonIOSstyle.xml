@@ -1,0 +1,7 @@
+﻿<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_checked="true"
+      android:drawable="@drawable/icon_toggle_on" />
+  <!-- checked -->
+  <item android:drawable="@drawable/icon_toggle_off" />
+  <!-- default/unchecked -->
+</selector>

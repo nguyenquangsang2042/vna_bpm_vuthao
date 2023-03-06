@@ -1,0 +1,100 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rela_ViewDetailWorkflow_Toolbar">
+            <ImageView
+                android:src="@drawable/icon_back_new"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputText_Close"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable" />
+            <TextView
+                android:text="Việc đến tôi"
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_PopupControl_InputText_Title"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputText_Done"
+                android:layout_toRightOf="@+id/img_PopupControl_InputText_Close"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:src="@drawable/icon_check"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputText_Done"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/clActionGreen" />
+            <ImageView
+                android:src="@drawable/icon_ver3_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputText_Delete"
+                android:padding="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputText_Done"
+                android:layout_centerVertical="true"
+                android:tint="@color/clActionRed" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:id="@+id/view_ItemHomePageToDoList_Category"
+            android:background="@color/clGrayNavigator2"
+            android:alpha="0.3"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:weightSum="10"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="5dp"
+            android:layout_weight="4"
+            android:id="@+id/ln_PopupControl_InputText"
+            android:background="@drawable/edtcornerstrokegray">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="25dp"
+                android:background="@color/transparent"
+                android:layout_weight="10"
+                android:text="Đây là Text"
+                android:inputType="textMultiLine"
+                android:id="@+id/edt_PopupControl_InputText" />
+            <ImageView
+                android:src="@drawable/icon_delete_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="2dp"
+                android:id="@+id/img_PopupControl_InputText_ClearText"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
