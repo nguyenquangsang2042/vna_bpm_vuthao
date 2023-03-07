@@ -1,3 +1,5 @@
+import 'package:floor/floor.dart';
+@entity
 class User
 {
    late String id;

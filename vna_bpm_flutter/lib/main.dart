@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main()async {
+  final database = await $FloorAppDatabase.databaseBuilder('app_database.db').build();
   runApp(const MyApp());
 }
 
