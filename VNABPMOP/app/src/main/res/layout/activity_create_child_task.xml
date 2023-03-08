@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_ViewDetailCreateTask_All"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rela_ViewDetailCreateTask_Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/clWhite">
+
+                <ImageView
+                    android:id="@+id/img_ViewDetailCreateTask_Back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_back30"
+                    android:tint="@color/clBottomDisable" />
+
+                <ImageView
+                    android:id="@+id/img_ViewDetailCreateTask_Done"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_bpm_btn_action_11"
+                    android:tint="@color/clBottomDisable" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ViewDetailCreateTask_Name"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="9dp"
+                        android:src="@drawable/icon_ver2_task"
+                        android:tint="@color/clBottomDisable" />
+
+                    <TextView
+                        android:id="@+id/tv_ViewDetailCreateTask_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:text="Phân công công việc"
+                        android:textColor="@color/clVer2BlueMain"
+                        android:textSize="@dimen/text16" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:alpha="0.3"
+                android:background="@color/clGrayNavigator2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px">
+
+                <LinearLayout
+                    android:id="@+id/ln_ViewDetailCreateTask_Data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minWidth="0px"
+                        android:minHeight="0px">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:minWidth="25px"
+                            android:minHeight="25px"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ln_ViewDetailCreateTask_ChiTiet_Content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:minWidth="25px"
+                                android:minHeight="25px"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp"
+                                android:visibility="visible">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minWidth="25px"
+                                    android:minHeight="25px"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_ViewDetailCreateTask_TieuDe"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:text="Tiêu đề (*)"
+                                        android:textColor="@color/clGraytitle"
+                                        android:textSize="@dimen/text13" />
+
+                                    <LinearLayout
+                                        android:id="@+id/ln_ViewDetailCreateTask_TieuDe_Content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/drawable_shadow"
+                                        android:gravity="center_vertical"
+                                        android:minWidth="25px"
+                                        android:minHeight="35dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_ViewDetailCreateTask_TieuDe_Content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:gravity="left"
+                                            android:maxLines="1"
+                                            android:paddingLeft="5dp"
+                                            android:paddingTop="7dp"
+                                            android:paddingRight="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:text=""
+                                            android:textColor="@color/clBlack"
+                                            android:textSize="@dimen/text14" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="25px"
+                                    android:minHeight="25px"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_ViewDetailCreateTask_NguoiXuLy"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:text="Người xử lý (*)"
+                                        android:textColor="@color/clGraytitle"
+                                        android:textSize="@dimen/text13" />
+
+                                    <LinearLayout
+                                        android:id="@+id/ln_ViewDetailCreateTask_NguoiXuLy_Content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:background="@drawable/drawable_shadow"
+                                        android:minWidth="25px"
+                                        android:minHeight="35dp"
+                                        android:orientation="horizontal">
+
+                                        <com.vuthao.bpmop.base.custom.CustomFlexBoxRecyclerView
+                                            android:id="@+id/recy_ViewDetailCreateTask_NguoiXuLy"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="10"
+                                            android:minWidth="25px"
+                                            android:minHeight="25px"
+                                            android:paddingLeft="3dp" />
+
+                                        <ImageView
+                                            android:id="@+id/img_ViewDetailCreateTask_NguoiXuLy"
+                                            android:layout_width="35dp"
+                                            android:layout_height="35dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:padding="8dp"
+                                            android:src="@drawable/icon_ver2_user" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="25px"
+                                    android:minHeight="25px"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <LinearLayout
+                                        android:layout_width="0.1dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_weight="1"
+                                        android:minWidth="25px"
+                                        android:minHeight="25px"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_ViewDetailCreateTask_HanHoanTat"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:gravity="left"
+                                            android:maxLines="1"
+                                            android:text="Hạn hoàn tất"
+                                            android:textColor="@color/clGraytitle"
+                                            android:textSize="@dimen/text13" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ln_ViewDetailCreateTask_HanHoanTat_Content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/drawable_shadow"
+                                            android:gravity="center_vertical"
+                                            android:minWidth="25px"
+                                            android:minHeight="35dp"
+                                            android:orientation="horizontal"
+                                            android:weightSum="10">
+
+                                            <TextView
+                                                android:id="@+id/tv_ViewDetailCreateTask_HanHoanTat_Content"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="10"
+                                                android:ellipsize="end"
+                                                android:gravity="center_vertical"
+                                                android:maxLines="1"
+                                                android:paddingLeft="5dp"
+                                                android:paddingTop="7dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingBottom="7dp"
+                                                android:text=""
+                                                android:textColor="@color/clBlack"
+                                                android:textSize="@dimen/text14" />
+
+                                            <ImageView
+                                                android:id="@+id/img_ViewDetailCreateTask_HanHoanTat_Content"
+                                                android:layout_width="30dp"
+                                                android:layout_height="30dp"
+                                                android:layout_marginRight="5dp"
+                                                android:padding="5dp"
+                                                android:src="@drawable/icon_ver2_calendar"
+                                                android:tint="@color/clGraytitle" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="0.1dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_weight="1"
+                                        android:minWidth="25px"
+                                        android:minHeight="25px"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_ViewDetailCreateTask_TinhTrang"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:gravity="left"
+                                            android:maxLines="1"
+                                            android:text="Tình trạng"
+                                            android:textColor="@color/clGraytitle"
+                                            android:textSize="@dimen/text13" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ln_ViewDetailCreateTask_TinhTrang_Content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:background="@drawable/drawable_shadow"
+                                            android:gravity="center_vertical"
+                                            android:minWidth="25px"
+                                            android:minHeight="35dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/tv_ViewDetailCreateTask_TinhTrang_Content"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:ellipsize="end"
+                                                android:gravity="left"
+                                                android:maxLines="1"
+                                                android:paddingLeft="5dp"
+                                                android:paddingTop="7dp"
+                                                android:paddingRight="5dp"
+                                                android:paddingBottom="7dp"
+                                                android:text=""
+                                                android:textColor="@color/clBlack"
+                                                android:textSize="@dimen/text14" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ln_ViewDetailCreateTask_NguoiGiao"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="25px"
+                                    android:minHeight="25px"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_ViewDetailCreateTask_NguoiGiao"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:text="Người giao"
+                                        android:textColor="@color/clGraytitle"
+                                        android:textSize="@dimen/text13" />
+
+                                    <LinearLayout
+                                        android:id="@+id/ln_ViewDetailCreateTask_NguoiGiao_Content"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:gravity="center_vertical"
+                                        android:minWidth="25px"
+                                        android:minHeight="35dp"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/tv_ViewDetailCreateTask_NguoiGiao_Content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ellipsize="end"
+                                            android:gravity="left"
+                                            android:maxLines="1"
+                                            android:paddingTop="7dp"
+                                            android:paddingRight="5dp"
+                                            android:paddingBottom="7dp"
+                                            android:textColor="@color/clBlack"
+                                            android:textSize="@dimen/text14" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:minWidth="25px"
+                                    android:minHeight="25px"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tv_ViewDetailCreateTask_NoiDung"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:ellipsize="end"
+                                        android:gravity="left"
+                                        android:maxLines="1"
+                                        android:text="Nội dung"
+                                        android:textColor="@color/clGraytitle"
+                                        android:textSize="@dimen/text13" />
+
+                                    <RelativeLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:minWidth="25px"
+                                        android:minHeight="25px">
+
+                                        <LinearLayout
+                                            android:id="@+id/ln_ViewDetailCreateTask_NoiDung_Content"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="100dp"
+                                            android:background="@drawable/drawable_shadow"
+                                            android:gravity="center_vertical"
+                                            android:minWidth="25px"
+                                            android:minHeight="35dp"
+                                            android:orientation="vertical"
+                                            android:padding="5dp">
+
+                                            <com.vuthao.bpmop.base.custom.editor.RichEditor
+                                                android:id="@+id/richEditor_ViewDetailCreateTask_NoiDung_Content"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/ln_ViewDetailCreateTask_NoiDung_ContentClick"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="100dp"
+                                            android:layout_marginLeft="0.0dp"
+                                            android:layout_marginTop="0.0dp"
+                                            android:layout_marginRight="0.0dp"
+                                            android:minWidth="25px"
+                                            android:minHeight="25px"
+                                            android:orientation="vertical" />
+
+                                    </RelativeLayout>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/ln_ViewDetailCreateTask_AttachFile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:minWidth="0px"
+                                    android:minHeight="0px"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="20dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_weight="10"
+                                        android:gravity="center"
+                                        android:minWidth="25px"
+                                        android:minHeight="25px"
+                                        android:orientation="horizontal"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:id="@+id/tv_ViewDetailCreateTask_AttachFile"
+                                            android:layout_width="0.1dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="10"
+                                            android:text="Text Tài liệu đính kèm"
+                                            android:textColor="@color/clBlack"
+                                            android:textSize="@dimen/text13"
+                                            android:textStyle="bold" />
+
+                                        <LinearLayout
+                                            android:id="@+id/ln_ViewDetailCreateTask_AttachFile_TaoMoi"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:minWidth="25px"
+                                            android:minHeight="25px"
+                                            android:orientation="horizontal">
+
+                                            <ImageView
+                                                android:id="@+id/img_ViewDetailCreateTask_AttachFile_TaoMoi"
+                                                android:layout_width="20dp"
+                                                android:layout_height="20dp"
+                                                android:src="@drawable/icon_ver2_addfile" />
+
+                                            <TextView
+                                                android:id="@+id/tv_ViewDetailCreateTask_AttachFile_TaoMoi"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="5dp"
+                                                android:text="Text Tạo mới"
+                                                android:textColor="@color/clBottomDisable"
+                                                android:textSize="@dimen/text13" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="12dp"
+                                        android:minWidth="25px"
+                                        android:minHeight="25px"
+                                        card_view:cardCornerRadius="5dp"
+                                        card_view:cardUseCompatPadding="true">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minWidth="25px"
+                                            android:minHeight="25px"
+                                            android:orientation="vertical">
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:background="@color/clGrayNavigator"
+                                                android:minWidth="25px"
+                                                android:minHeight="25px"
+                                                android:orientation="horizontal"
+                                                android:paddingLeft="6dp"
+                                                android:paddingTop="12dp"
+                                                android:paddingRight="6dp"
+                                                android:paddingBottom="12dp"
+                                                android:visibility="visible"
+                                                android:weightSum="10">
+
+                                                <TextView
+                                                    android:id="@+id/tv_ViewDetailCreateTask_AttachFile_Child1"
+                                                    android:layout_width="0.1dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="6.5"
+                                                    android:maxLines="1"
+                                                    android:padding="5dp"
+                                                    android:text="Text Tài liệu đính kèm"
+                                                    android:textColor="@color/clBlack"
+                                                    android:textSize="@dimen/text12"
+                                                    android:textStyle="bold" />
+
+                                                <TextView
+                                                    android:id="@+id/tv_ViewDetailCreateTask_AttachFile_Child2"
+                                                    android:layout_width="0.1dp"
+                                                    android:layout_height="match_parent"
+                                                    android:layout_weight="3.5"
+                                                    android:maxLines="1"
+                                                    android:padding="5dp"
+                                                    android:text="Text Người tạo"
+                                                    android:textColor="@color/clBlack"
+                                                    android:textSize="@dimen/text12"
+                                                    android:textStyle="bold" />
+                                            </LinearLayout>
+
+                                            <androidx.recyclerview.widget.RecyclerView
+                                                android:id="@+id/recy_ViewDetailCreateTask_AttachFile"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:minWidth="0px"
+                                                android:minHeight="0px"
+                                                android:visibility="visible" />
+                                        </LinearLayout>
+                                    </androidx.cardview.widget.CardView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ln_ViewDetailCreateTask_Comment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minWidth="0px"
+                                android:minHeight="0px"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="10dp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_ViewDetailCreateTask_NoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/clWhite"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_ViewDetailCreateTask_NoData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/text_light"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Không có dữ liệu"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text18"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

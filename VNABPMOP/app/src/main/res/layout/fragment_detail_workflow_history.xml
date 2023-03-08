@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_ViewDetailProcess_All"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/clWhite">
+
+        <ImageView
+            android:id="@+id/img_ViewDetailProcess_Back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_back30"
+            android:tint="@color/clBottomDisable" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_ViewDetailWorkflow_Proce"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="9dp"
+                android:src="@drawable/icon_ver2_process"
+                android:tint="@color/clBottomDisable" />
+
+            <TextView
+                android:id="@+id/tv_ViewDetailProcess_Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Luồng phê duyệt"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:alpha="0.3"
+        android:background="@color/clGrayNavigator2" />
+
+    <LinearLayout
+        android:id="@+id/rela_ViewDetailProcess_TaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clGray"
+        android:gravity="center"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_ViewDetailProcess_WorkflowName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="2"
+            android:text="Text Yêu cầu phê duyệt Đề xuất công tác tại Hà Nội #110268"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/clGraylight"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/ln_ViewDetailProcess_Process"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ExpandableListView
+                android:id="@+id/expand_ViewDetailProcess_Process"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:childIndicator="@null"
+                android:groupIndicator="@null"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:scrollbarSize="1px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_ViewDetailProcess_NoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/clWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:src="@drawable/icon_nodata"
+                android:tint="@color/clHint" />
+
+            <TextView
+                android:id="@+id/tv_PagerHomePage_NotData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Không có dữ liệu"
+                android:textColor="@color/clTextSmall"
+                android:textSize="@dimen/text16" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"/>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/clTransparent</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabText</item>
+        <item name="tabSelectedTextColor">@color/clVer2BlueMain</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/clBlack</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Theme chính của app -->
+    <style name="Theme.Custom.BPMOP" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor">@color/clBlack</item>
+        <item name="android:statusBarColor">@color/clWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationStyle</item>
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:fontFamily">@font/fontarial</item>
+        <item name="colorPrimaryDark">@color/clWhite</item>
+        <item name="fontFamily">@font/fontarial</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerThemeCustom_NoDivider</item>
+        <item name="android:timePickerDialogTheme">@style/TimePickerThemeCustom_NoDivider</item>
+    </style>
+
+    <style name="WindowAnimationStyle">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Theme của Dialog fullscreen -->
+    <style name="Theme.Custom.BPMOP.Dialog.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/clViolet</item>
+        <item name="android:navigationBarColor">@color/clBlack</item>
+        <item name="android:statusBarColor">@color/clWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/clViolet</item> <!-- hình nền chờ khi mở app lên -->
+        <item name="android:windowAnimationStyle">@style/Theme.Custom.BPMOP.Dialog.FullScreen.Animation</item>  Animation khi mở đóng -->
+    </style>
+
+    <!-- Theme của Dialog fullscreen Notitlebar -->
+    <style name="Theme.Custom.BPMOP.Dialog.NoTitleBar.FullScreen" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/clWhite</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimaryDark">@color/clViolet</item>
+        <item name="android:navigationBarColor">@color/clBlack</item>
+        <item name="android:windowBackground">@color/clViolet</item>
+        <!-- hình nền chờ khi mở app lên -->
+    </style>
+
+    <style name="Theme.Custom.BPMOP.Dialog.Date" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.Custom.BPMOP.Dialog.FullScreen.TopToBot" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Theme của Dialog fullscreen, giống Theme.Custom.BPMOP.Dialog.FullScreen nhưng Animation top bot -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/clViolet</item>
+        <item name="android:navigationBarColor">@color/clBlack</item>
+        <item name="android:windowBackground">@color/clViolet</item> <!-- hình nền chờ khi mở app lên -->
+        <item name="android:windowAnimationStyle">@style/Theme.Custom.BPMOP.Dialog.FullScreen.AnimationTopToBot</item>  Animation khi mở đóng -->
+    </style>
+
+    <style name="Theme.Custom.BPMOP.Dialog.FullScreen.Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_side_right_to_left</item>
+        <item name="android:windowExitAnimation">@anim/anim_side_left_to_right</item>
+    </style>
+
+    <style name="Theme.Custom.BPMOP.Dialog.FullScreen.AnimationTopToBot">
+        <item name="android:windowEnterAnimation">@anim/anim_side_bot_to_top</item>
+        <item name="android:windowExitAnimation">@anim/anim_side_top_to_bot</item>
+    </style>
+
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/clVer2BlueMain</item>
+    </style>
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/clViolet</item>
+    </style>
+
+    <style name="NumberPickerThemeCustom_NoDivider" parent="AppTheme">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <!-- Remove selection divider -->
+    </style>
+
+    <style name="DatePickerThemeCustom_NoDivider" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <!-- Remove selection divider -->
+    </style>
+
+    <style name="TimePickerThemeCustom_NoDivider" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <!-- Remove selection divider -->
+    </style>
+
+    <style name="AlertCustomProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="colorAccent">@color/clViolet</item>
+    </style>
+</resources>

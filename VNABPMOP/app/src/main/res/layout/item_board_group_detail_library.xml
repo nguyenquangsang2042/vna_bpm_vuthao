@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_ItemBoardDetailGroupLibrary_All"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textcornergray"
+        android:layoutAnimation="@anim/layout_anim_falldown"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_ItemBoardDetailGroupLibrary_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Nhóm quy trình"
+            android:textColor="@color/clVer2BlueMain"
+            android:textSize="@dimen/text16"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0px"
+            android:minHeight="0px">
+
+            <TextView
+                android:id="@+id/tv_ItemBoardDetailGroupLibrary_Child_NoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:minHeight="155dp"
+                android:text="Không có dữ liệu"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

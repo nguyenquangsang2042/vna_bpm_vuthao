@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_ViewChildAppListWorkflow_All"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_ViewChildAppListWorkflow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:nestedScrollingEnabled="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollbarSize="1dp"
+        android:visibility="visible" />
+    <LinearLayout
+        android:id="@+id/ln_ViewChildAppListWorkflow_NoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="@color/clWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_ViewChildAppListWorkflow_NoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@string/text_light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Không có dữ liệu"
+            android:textColor="@color/clBottomDisable"
+            android:textSize="@dimen/text18"
+            android:textStyle="italic" />
+    </LinearLayout>
+</LinearLayout>

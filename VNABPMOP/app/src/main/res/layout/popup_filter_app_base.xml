@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_PopupVer4FilterAppBase_TopBlur"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clGraySearchUser"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/vw_PopupVer4FilterAppBase_Top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/drawable_cornerfilter" />
+
+        <LinearLayout
+            android:id="@+id/ln_PopupVer4FilterAppBase_TinhTrang_Content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/clWhite"
+            android:foreground="?attr/selectableItemBackground"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/icon_ver3_trangthai"
+                android:tint="@color/clGraytitle" />
+
+            <TextView
+                android:id="@+id/tv_PopupVer4FilterAppBase_TinhTrang"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Quy trình"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_PopupVer4FilterAppBase_TinhTrang_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Tình trạng Hoàng Đăng Khoa"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:padding="9dp"
+                    android:rotation="180"
+                    android:src="@drawable/icon_back_new"
+                    android:tint="@color/clGraytitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/drawable_cornerfilter" />
+
+        <LinearLayout
+            android:id="@+id/ln_PopupVer4FilterAppBase_TrangThai_Content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/clWhite"
+            android:foreground="?attr/selectableItemBackground"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/icion_ver3_tinhtrang"
+                android:tint="@color/clGraytitle" />
+
+            <TextView
+                android:id="@+id/tv_PopupVer4FilterAppBase_TrangThai"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Tình trạng"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_PopupVer4FilterAppBase_TrangThai_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Trạng thái Hoàng Đăng Khoa"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:padding="9dp"
+                    android:rotation="180"
+                    android:src="@drawable/icon_back_new"
+                    android:tint="@color/clGraytitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/clGray" />
+
+        <LinearLayout
+            android:id="@+id/ln_PopupVer4FilterAppBase_HanXuLy_Content"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/clWhite"
+            android:foreground="?attr/selectableItemBackground"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:visibility="visible"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:src="@drawable/icon_ver3_duedate"
+                android:tint="@color/clGraytitle" />
+
+            <TextView
+                android:id="@+id/tv_PopupVer4FilterAppBase_HanXuLy"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Hạn xử lý"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_PopupVer4FilterAppBase_HanXuLy_Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="Hạn xử lý Hoàng Đăng Khoa"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text14" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:padding="9dp"
+                    android:rotation="180"
+                    android:src="@drawable/icon_back_new"
+                    android:tint="@color/clGraytitle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/drawable_cornerfilter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clWhite"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="12dp"
+                    android:src="@drawable/icon_ver2_calendar"
+                    android:tint="@color/clGraytitle" />
+
+                <TextView
+                    android:id="@+id/tv_PopupVer4FilterAppBase_Ngay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Ngày tạo"
+                    android:textColor="@color/clBottomDisable"
+                    android:textSize="@dimen/text14" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/clGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_PopupVer4FilterAppBase_Ngay_TuNgay"
+                    android:layout_width="0.1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_PopupVer4FilterAppBase_Ngay_TuNgay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Từ ngày"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text13" />
+
+                    <TextView
+                        android:id="@+id/tv_PopupVer4FilterAppBase_Ngay_TuNgay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="01/01/10"
+                        android:textColor="@color/clBlack"
+                        android:textSize="@dimen/text13" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/clGray" />
+
+                <LinearLayout
+                    android:id="@+id/ln_PopupVer4FilterAppBase_Ngay_DenNgay"
+                    android:layout_width="0.1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/lbl_PopupVer4FilterAppBase_Ngay_DenNgay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="Đến ngày"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text13" />
+
+                    <TextView
+                        android:id="@+id/tv_PopupVer4FilterAppBase_Ngay_DenNgay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="01/01/10"
+                        android:textColor="@color/clBlack"
+                        android:textSize="@dimen/text13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/clGray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_PopupVer4FilterAppBase_Ngay_ApDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/textcornerviolet2"
+                android:backgroundTint="@color/clVer2BlueMain"
+                android:paddingLeft="30dp"
+                android:paddingTop="8dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="8dp"
+                android:text="Áp dụng"
+                android:textColor="@color/clWhite"
+                android:textSize="@dimen/text12" />
+
+            <TextView
+                android:id="@+id/tv_PopupVer4FilterAppBase_MacDinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_PopupVer4FilterAppBase_Ngay_ApDung"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp"
+                android:text="Thiết lập lại"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text12"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:id="@+id/ln_ItemControlInputAttachmentVertical"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:padding="5dp">
+            <ImageView
+                android:src="@drawable/icon_pdffile"
+                android:padding="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/img_ItemControlInputAttachmentVertical_Extension" />
+        </LinearLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="0.1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:id="@+id/relativeLayout1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:id="@+id/ln_ItemControlInputAttachmentVertical_Name">
+                <TextView
+                    android:text="Text Hợp đồng.pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/clBottomEnable"
+                    android:textSize="@dimen/text14"
+                    android:maxLines="1"
+                    android:id="@+id/tv_ItemControlInputAttachmentVertical_Name" />
+                <TextView
+                    android:text="Text 8.78 MB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textColor="@color/clGraySize"
+                    android:textSize="@dimen/text11"
+                    android:maxLines="1"
+                    android:id="@+id/tv_ItemControlInputAttachmentVertical_Size" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

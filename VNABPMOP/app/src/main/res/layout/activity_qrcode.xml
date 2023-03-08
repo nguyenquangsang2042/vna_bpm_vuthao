@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:src="@drawable/icon_back_new"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_ViewQRCode_Back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:tint="@color/clBottomDisable" />
+        <TextView
+            android:text="Quét mã QR"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_QRCode_Title"
+            android:textColor="@color/clVer2BlueMain"
+            android:textSize="@dimen/text16"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <me.dm7.barcodescanner.zxing.ZXingScannerView
+        android:id="@+id/iewQRCode_Camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"/>
+</LinearLayout>

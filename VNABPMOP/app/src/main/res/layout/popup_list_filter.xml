@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_PopupListFilter_TopBlur"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical"
+        android:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/clGrayNavigator" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/clWhite"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvListFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/rela_PopupHomePageFilter_ApDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_PopupListFilter_ApDung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/textcornerviolet2"
+                    android:backgroundTint="@color/clVer2BlueMain"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="8dp"
+                    android:text="Áp dụng"
+                    android:textColor="@color/clWhite"
+                    android:textSize="@dimen/text12" />
+
+                <TextView
+                    android:id="@+id/tv_PopupListFilter_ThietLapLai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_PopupListFilter_ApDung"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="Thiết lập lại"
+                    android:textColor="@color/clVer2BlueMain"
+                    android:textSize="@dimen/text12"
+                    android:textStyle="italic" />
+
+                <CalendarView
+                    android:id="@+id/calendar_PopupHomePageFilterVDT_NgayGuiDen_TuNgay"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:visibility="gone" />
+
+                <CalendarView
+                    android:id="@+id/calendar_PopupHomePageFilterVDT_NgayGuiDen_DenNgay"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/clGray" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln_PopupListFilter_BottomBlur"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_weight="1"
+        android:background="@color/clBlackBlur"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical" />
+</LinearLayout>

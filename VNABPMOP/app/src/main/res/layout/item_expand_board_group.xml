@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ln_ItemExpandBoardGroup"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/clGraySearchUser">
+        <ImageView
+            android:src="@drawable/icon_ver2_triangle"
+            android:tint="@color/clVer2BlueMain"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center"
+            android:rotation="0"
+            android:id="@+id/img_ItemExpandBoardGroup_Expand" />
+        <TextView
+            android:text="Text Phòng nhân sự"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ItemExpandBoardGroup_Title"
+            android:textColor="@color/clVer2BlueMain"
+            android:textSize="@dimen/text15"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    android:background="@android:color/background_light"
+    android:id="@+id/ln_ViewListWorkflow_All">
+    <androidx.recyclerview.widget.RecyclerView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recy_ViewListWorkflow"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:scrollbarSize="1dp"
+        android:nestedScrollingEnabled="true"
+        />
+    <LinearLayout
+        android:id="@+id/ln_ViewListWorkflow_NoData"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/imageView1"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:tint="@color/clHint" />
+        <TextView
+            android:text="Không có dữ liệu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ViewListWorkflow_NoData"
+            android:fontFamily="@string/text_light"
+            android:textColor="@color/clBottomDisable"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textStyle="italic"
+            android:textSize="@dimen/text18"
+            android:padding="10dp" />
+    </LinearLayout>
+</LinearLayout>

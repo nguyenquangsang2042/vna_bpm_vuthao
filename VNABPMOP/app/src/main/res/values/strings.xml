@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AD BPM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_not_found">Data Not Found</string>
+    <string name="light_font">sans-serif-light</string>
+    <string name="normal_font">sans-serif</string>
+    <string name="bold_font">sans-serif-bold</string>
+    <string name="load_more_data">Loading more data.</string>
+    <string name="no_connection">Không có kết nối mạng !</string>
+    <string name="ok">Đồng ý</string>
+    <string name="text_light">sans-serif-light</string>
+    <string name="cancel">Hủy</string>
+</resources>

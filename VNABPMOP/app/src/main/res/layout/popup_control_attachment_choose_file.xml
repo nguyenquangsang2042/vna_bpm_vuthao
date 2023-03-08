@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clWhite">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:id="@+id/ln_PopupControlAttachmentChooseFile"
+        android:weightSum="10"
+        android:visibility="visible">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:src="@drawable/icon_back_new"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:tint="@color/clBottomDisable"
+                android:id="@+id/img_PopupControlAttachmentChooseFile_Back" />
+            <TextView
+                android:text="Text Đính kèm file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16"
+                android:layout_centerInParent="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_PopupControlAttachmentChooseFile_title"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/view1"
+            android:background="@color/clGrayNavigator2"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:background="@color/clGrayGroupAttach"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:text="Text Tập tin trong ứng dụng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PopupControlAttachmentChooseFile_InApp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text15"
+                    android:padding="10dp"
+                    android:textColor="@color/clBlack"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_PopupControlAttachmentChooseFile_NoData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="Không có dữ liệu"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text14"
+                android:textStyle="italic" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:visibility="gone"
+                android:id="@+id/recy_PopupControlAttachmentChooseFile_InApp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:background="@color/clGrayGroupAttach">
+                <TextView
+                    android:text="Text Từ nguồn khác"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_PopupControlAttachmentChooseFile_Other"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/text15"
+                    android:padding="10dp"
+                    android:textColor="@color/clBlack"
+                    android:visibility="visible" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ln_PopupControlAttachmentChooseFile_Other_Cloud"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/icon_ver2_phone"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"/>
+                    <TextView
+                        android:text="Text Google drive and Device"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_PopupControlAttachmentChooseFile_Other_Cloud"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text14"
+                        android:padding="10dp"
+                        android:textColor="@color/clBlack"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/clGrayNavigator2"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ln_PopupControlAttachmentChooseFile_Other_Library"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/icon_ver2_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"/>
+                    <TextView
+                        android:text="Text Choose Photo From Library"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_PopupControlAttachmentChooseFile_Other_Library"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text14"
+                        android:padding="10dp"
+                        android:textColor="@color/clBlack"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/clGrayNavigator2"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/ln_PopupControlAttachmentChooseFile_Other_Camera"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@drawable/icon_ver2_camera"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:padding="12dp"/>
+                    <TextView
+                        android:text="Text Camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_PopupControlAttachmentChooseFile_Other_Camera"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/text14"
+                        android:padding="10dp"
+                        android:textColor="@color/clBlack"
+                        android:visibility="visible" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/clGrayNavigator2"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

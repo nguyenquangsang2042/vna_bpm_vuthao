@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:id="@+id/ln_ViewHomePage_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clWhite"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_ViewChildAppListWorkflow_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_ViewChildAppListWorkflow_Back"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="Việc đến tôi"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16" />
+
+            <ImageView
+                android:id="@+id/img_ViewChildAppListWorkflow_Back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/icon_back30"
+                android:tint="@color/clBottomDisable" />
+
+            <LinearLayout
+                android:id="@+id/ln_ViewHomePage_Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/textcornerviolet2"
+                android:backgroundTint="@color/clWhite"
+                android:gravity="right"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/img_ViewHomePage_Search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_ver2_search"
+                    android:tint="@color/clGrayIcon" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="0px"
+            android:minHeight="0px"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/img_ViewHomePage_Filter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/icon_ver3_filter"
+                android:layout_alignParentEnd="true"/>
+
+            <LinearLayout
+                android:id="@+id/ln_ViewListWorkflow_Tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/drawable_tabbackground"
+                    android:gravity="center_vertical"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:id="@+id/tv_ViewHomePage_VDT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_tabselected"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        android:text="Đến tôi (0)"
+                        android:textColor="@color/clVer2BlueMain"
+                        android:textSize="@dimen/text14"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_ViewHomePage_VTBD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_tabnotselected"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="5dp"
+                        android:text="Tôi bắt đầu (0)"
+                        android:textColor="@color/clWhite"
+                        android:textSize="@dimen/text14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_ViewListWorkflow_Search"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/clGraySearchUser"
+                android:background="@drawable/border_radius_gray"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="25px"
+                    android:minHeight="25px">
+
+                    <ImageView
+                        android:id="@+id/img_ListWorkflowView_Search_Delete"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="3dp"
+                        android:padding="7dp"
+                        android:src="@drawable/icon_delete"
+                        android:tint="@color/clBottomDisable"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/edt_ListWorkflowView_Search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toStartOf="@+id/img_ListWorkflowView_Search_Delete"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="Tìm kiếm..."
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="5dp"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@color/clBottomDisable"
+                        android:textSize="@dimen/text16"
+                        android:textStyle="italic" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:background="@color/clGrayNavigator" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_ViewHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:id="@+id/ln_ViewHomePage_Content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <com.vuthao.bpmop.base.custom.MyCustomViewPager
+                android:id="@+id/pager_ChildViewVDT"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10" />
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

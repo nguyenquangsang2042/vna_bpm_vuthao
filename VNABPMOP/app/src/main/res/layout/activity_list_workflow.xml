@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/clWhite"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rela_ViewBoard_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/clWhite">
+
+        <ImageView
+            android:id="@+id/img_ViewBoard_Back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/icon_back30"
+            android:tint="@color/transparent" />
+
+        <TextView
+            android:id="@+id/tv_ViewBoard_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/img_ViewBoard_Back"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Board"
+            android:textColor="@color/clVer2BlueMain"
+            android:textSize="@dimen/text16" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_ViewBoard_GroupWorkflow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="0.5dp"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/ln_ViewBoard_CurrentGroupWorkflow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="0px"
+            android:minHeight="0px"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:gravity="center"
+                android:minWidth="0px"
+                android:minHeight="0px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ViewBoard_CurrentGroupWorkflow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Nhóm quy trình"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:rotation="180"
+                    android:src="@drawable/icon_back30"
+                    android:tint="@color/clBlack" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/ln_ViewBoard_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_ViewBoard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:id="@+id/rela_ViewBoard_Data"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_weight="10"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:visibility="visible">
+
+                    <com.vuthao.bpmop.base.custom.expandable.AnimatedExpandableListView
+                        android:id="@+id/expand_ViewBoard_Data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:nestedScrollingEnabled="true"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/ln_ViewBoard_NoData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/clWhite"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/tv_ViewBoard_NoData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@string/text_light"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Không có dữ liệu"
+                            android:textColor="@color/clBottomDisable"
+                            android:textSize="@dimen/text18"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

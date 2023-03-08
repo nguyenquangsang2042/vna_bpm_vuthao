@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_ItemAppBaseToDoList_Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/clGrayGroup"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ItemAppBaseToDoList_Category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="Hôm qua"
+            android:textColor="@color/clBottomDisable"
+            android:textSize="@dimen/text14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_ItemAppBaseToDoList_All"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        android:foreground="?attr/selectableItemBackground"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="9dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_ItemAppBaseToDoList_Avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/clWhite"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/icon_avatar64"
+            android:tint="#00000000"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/ln_ItemAppBaseToDoList_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_ItemAppBaseToDoList_Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Text Đăng ký công tác tại Thành Phố Hồ Chí Minh"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text15" />
+
+                <TextView
+                    android:id="@+id/tv_ItemAppBaseToDoList_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="2dp"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="19/02/03"
+                    android:textColor="@color/clBottomDisable"
+                    android:textSize="@dimen/text12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:minWidth="25px"
+                android:minHeight="0px"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tv_ItemAppBaseToDoList_Description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:text="Text quy trình đề xuất tạm ứng chi phí tổ chức sự kiện"
+                    android:textColor="@color/clBottomDisable"
+                    android:textSize="@dimen/text12" />
+
+                <ImageView
+                    android:id="@+id/img_ItemAppBaseToDoList_Favorite"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="1dp"
+                    android:src="@drawable/icon_ver2_star_checked" />
+
+                <ImageView
+                    android:id="@+id/img_ItemAppBaseToDoList_Flag"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="1dp"
+                    android:src="@drawable/icon_ver2_flag"
+                    android:tint="@color/clRed" />
+
+                <ImageView
+                    android:id="@+id/img_ItemAppBaseToDoList_AttachFile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:padding="3dp"
+                    android:src="@drawable/icon_ver2_attach"
+                    android:tint="@color/clGraytitle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:minWidth="25px"
+                android:minHeight="0px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_ItemAppBaseToDoList_Status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/textcornerred"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Text Đã duyệt"
+                    android:textAlignment="center"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text12" />
+
+                <TextView
+                    android:id="@+id/tv_ItemAppBaseToDoList_StatusTime"
+                    android:layout_width="0.1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:text="Text 8:00, 18/03/1997"
+                    android:textColor="@color/clBottomDisable"
+                    android:textSize="@dimen/text12" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

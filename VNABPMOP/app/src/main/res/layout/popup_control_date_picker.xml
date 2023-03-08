@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        android:layout_margin="10dp"
+        android:background="@drawable/textcornerwhite2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rela_ViewDetailWorkflow_Toolbar">
+            <ImageView
+                android:src="@drawable/icon_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_DatePicker_Close"
+                android:padding="5dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:text="Việc đến tôi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_PopupControl_DatePicker_Title"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:maxLines="1" />
+            <ImageView
+                android:src="@drawable/icon_check"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_DatePicker_Done"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/clActionGreen" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcornerwhite2"
+            android:paddingBottom="5dp">
+            <CalendarView
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="visible"
+                android:id="@+id/Calendar_PopupControl_DatePicker" />
+        </LinearLayout>
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_PopupControl_DatePicker_CurrentDate"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:background="@color/clGrayNavigator"
+            android:id="@+id/ln_PopupControl_DatePicker_Clear">
+
+            <TextView
+                android:text="Clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_PopupControl_DatePicker_Clear"
+                android:textColor="@color/clBottomDisable"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

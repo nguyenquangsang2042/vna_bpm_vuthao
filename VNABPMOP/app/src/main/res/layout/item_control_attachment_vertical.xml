@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <ImageView
+            android:src="@drawable/icon_pdffile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_gravity="center"
+            android:id="@+id/img_ItemControlAttachmentVertical_Avatar" />
+        <TextView
+            android:text="textfilePDF.pdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/clGraytitle"
+            android:textSize="@dimen/text14"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:id="@+id/tv_ItemControlAttachmentVertical_FileName"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/clGrayNavigator2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+</LinearLayout>

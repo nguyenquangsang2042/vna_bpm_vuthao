@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clWhite"
+        android:weightSum="10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/rela_ViewDetailWorkflow_Toolbar">
+            <ImageView
+                android:src="@drawable/icon_back_new"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputTextFormat_Close"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/clBottomDisable" />
+            <TextView
+                android:text="Việc đến tôi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_PopupControl_InputTextFormat_Title"
+                android:textColor="@color/clVer2BlueMain"
+                android:textSize="@dimen/text16"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:lines="1"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/img_PopupControl_InputTextFormat_Close"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputTextFormat_Done"
+                android:maxLines="1" />
+            <ImageView
+                android:src="@drawable/icon_check"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputTextFormat_Done"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:tint="@color/clActionGreen" />
+            <ImageView
+                android:src="@drawable/icon_ver3_delete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/img_PopupControl_InputTextFormat_Delete"
+                android:padding="8dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_PopupControl_InputTextFormat_Done"
+                android:layout_centerVertical="true"
+                android:tint="@color/clActionRed" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:id="@+id/view_ItemHomePageToDoList_Category"
+            android:background="@color/clGrayNavigator2"/>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:id="@+id/rela_PopupControl_InputTextFormat_Content"
+            android:background="@drawable/edtcornerstrokegray">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.vuthao.bpmop.base.custom.editor.RichEditor
+                    android:id="@+id/editor_PopupControl_InputTextFormat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:alpha="0.5"
+                android:id="@+id/ln_PopupControl_InputTextFormat_ContentClick" />
+        </RelativeLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textcornerstrokegray"
+            android:id="@+id/scroll_PopupControl_InputTextFormat_Action"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_undo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_undo"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_redo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_redo"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_bold"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_bold"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_italic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_italic"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_subscript"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_subscript"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_superscript"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_superscript"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_strikethrough"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_strikethrough"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_underline"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_underline"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h1"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h2"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h3"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h4"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h5"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_heading6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_h6"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_txt_color"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/rich_editor_txt_color"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_bg_color"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/rich_editor_bg_color"/>
+
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_indent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_indent"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_outdent"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_outdent"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_align_left"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_justify_left"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_align_center"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_justify_center"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_align_right"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_justify_right"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_insert_bullets"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_bullets"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_insert_numbers"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_numbers"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_blockquote"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_blockquote"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_insert_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_insert_image"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_insert_link"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/rich_editor_insert_link"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/img_PopupControl_InputTextFormat_insert_checkbox"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@android:drawable/checkbox_on_background"
+                    android:tint="@color/clBottomDisable"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

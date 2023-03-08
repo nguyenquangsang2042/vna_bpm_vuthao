@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:visible="true"
+       android:dither="true"
+       android:useLevel="false">
+
+  <solid android:color="@color/clWhite"></solid>
+  <stroke android:color="@color/clGrayNavigator" android:width="1dp"/>
+  <corners android:radius="3dp"/>
+  <size android:width="40dp" android:height="25dp" />
+</shape>

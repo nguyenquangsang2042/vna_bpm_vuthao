@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ln_ItemLeftMenuApp_All"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_ItemLeftMenuApp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="11dp"
+            android:src="@drawable/icon_ver3_app"
+            android:tint="@color/clBlack" />
+
+        <TextView
+            android:id="@+id/tv_ItemLeftMenuApp_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Ứng dụng"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text12" />
+
+    </LinearLayout>
+
+</LinearLayout>

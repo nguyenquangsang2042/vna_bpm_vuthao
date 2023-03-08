@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/textcornergray_selectuser"
+        android:id="@+id/ln_ItemChooseMultiUser_Text_All">
+
+        <TextView
+            android:text="Text Hoàng Đăng Khoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text14"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:id="@+id/tv_ItemChooseMultiUser_Text_Name"/>
+        <ImageView
+            android:src="@drawable/icon_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="7dp"
+            android:tint="@color/clActionRed"
+            android:id="@+id/tv_ItemChooseMultiUser_Text_Delete" />
+
+    </LinearLayout>
+</LinearLayout>

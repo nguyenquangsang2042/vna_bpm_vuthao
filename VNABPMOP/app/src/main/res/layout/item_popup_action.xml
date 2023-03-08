@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="10"
+        android:gravity="center"
+        android:id="@+id/ln_ItemPopupAction"
+        android:foreground="?attr/selectableItemBackground">
+        <ImageView
+            android:src="@drawable/icon_bpm_btn_action_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/img_ItemPopupAction"
+            android:layout_centerVertical="true"
+            android:scaleType="fitEnd"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:padding="5dp"/>
+        <TextView
+            android:text="Text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_ItemPopupAction"
+            android:id="@+id/tv_ItemPopupAction"
+            android:layout_centerVertical="true"
+            android:textColor="@color/clBlack"
+            android:textSize="@dimen/text16"
+            android:layout_weight="9"
+            android:gravity="left"/>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_toRightOf="@+id/img_ItemPopupAction"
+        android:id="@+id/view_ItemPopupAction"
+        android:background="@color/clGrayNavigator"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"/>
+
+</LinearLayout>

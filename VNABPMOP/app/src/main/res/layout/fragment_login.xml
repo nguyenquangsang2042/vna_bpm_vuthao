@@ -1,0 +1,217 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relabackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgcovera"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vnaplanelogo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgcovera">
+
+            <LinearLayout
+                android:id="@+id/lnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.9"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/ln_ViewStartView_VNAirlines_Name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:minWidth="25px"
+                                android:minHeight="25px"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/edt_ViewStartView_VNAirlines_Username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_radius_white"
+                                    android:drawableLeft="@drawable/icon_vna_user"
+                                    android:drawablePadding="10dp"
+                                    android:fontFamily="san-serif-light"
+                                    android:hint="Tên đăng nhập"
+                                    android:paddingLeft="13dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="13dp"
+                                    android:paddingBottom="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="@dimen/textsize" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ln_ViewStartView_VNAirlines_Pass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minWidth="25px"
+                                android:minHeight="25px"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/edt_ViewStartView_VNAirlines_Pass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:alpha="1"
+                                    android:background="@drawable/border_radius_white"
+                                    android:drawableLeft="@drawable/icon_vna_lock"
+                                    android:drawablePadding="10dp"
+                                    android:fontFamily="san-serif-light"
+                                    android:hint="Mật khẩu"
+                                    android:imeOptions="actionGo"
+                                    android:maxLength="50"
+                                    android:paddingLeft="13dp"
+                                    android:paddingTop="10dp"
+                                    android:paddingRight="13dp"
+                                    android:paddingBottom="10dp"
+                                    android:password="true"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textSize="@dimen/textsize" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_ViewStartView_VNAirlines_Login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="0dp"
+                        android:background="@drawable/textloginstartview"
+                        android:backgroundTint="#C9982A"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:padding="0.2dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <TextView
+                            android:id="@+id/tv_ViewStartView_VNAirlines_Login"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/textloginstartview"
+                            android:backgroundTint="#C9982A"
+                            android:fontFamily="san-serif-light"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="30dp"
+                            android:paddingBottom="10dp"
+                            android:text="Sign in"
+                            android:textAlignment="center"
+                            android:textColor="@color/clWhite"
+                            android:textSize="16sp" />
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:text="Chưa đăng ký ứng dụng ?"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text15" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/txtSignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/customebutton"
+                    android:text="Register"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/ln_StartView_Loading"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:alpha="0.7"
+                android:background="@android:color/background_light"
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ViewStartView_VNAirlines_Note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Đang kiểm tra..."
+                    android:textColor="#006885"
+                    android:textSize="@dimen/titlesize" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnBack_Startview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/clTransparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_back_cycle" />
+</FrameLayout>

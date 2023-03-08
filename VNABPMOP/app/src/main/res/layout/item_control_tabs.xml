@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Không xác định"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/clBlack"
+        android:textSize="@dimen/text14"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:id="@+id/tv_ItemControlTabs_Title"
+        android:background="@drawable/item_control_tabs_unselected"/>
+</LinearLayout>

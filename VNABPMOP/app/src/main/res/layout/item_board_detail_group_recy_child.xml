@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_ItemBoardDetailGroup_RecyChild_All"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/textgrayboard_bot2corner"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_ItemBoardDetailGroup_RecyChild_All"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/ln_ItemBoardDetailGroup_RecyChild_Data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?attr/selectableItemBackground"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:minWidth="25px"
+                android:minHeight="25px">
+
+                <TextView
+                    android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="3"
+                    android:text="18/03/20 19:00"
+                    android:textColor="@color/clBottomDisable"
+                    android:textSize="@dimen/text13" />
+
+                <TextView
+                    android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_Priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img_ItemBoardDetailGroup_RecyChild_Subcribe"
+                    android:background="@drawable/textboardemergency"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="3dp"
+                    android:text="Khẩn cấp"
+                    android:textColor="@color/clWhite"
+                    android:textSize="@dimen/text13"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_ItemBoardDetailGroup_RecyChild_Subcribe"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:padding="6dp"
+                    android:src="@drawable/icon_ver2_follow_checked"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rela_ItemBoardDetailGroup_RecyChild_Avatar"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_Avatar"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/textcircleviolet"
+                        android:gravity="center"
+                        android:text="TP"
+                        android:textColor="@color/clWhite"
+                        android:textSize="@dimen/text13"
+                        android:visibility="visible" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_ItemBoardDetailGroup_RecyChild_Avatar"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/clWhite"
+                        android:backgroundTint="#00000000"
+                        android:padding="3dp"
+                        android:src="@drawable/icon_avatar64"
+                        android:tint="#00000000"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_Title"
+                    android:layout_width="0.1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:lines="3"
+                    android:maxLines="3"
+                    android:text="Text Phòng IT đăng ký làm việc ngoài giờ vào cuối tuần tại tháng 9/2019 sau đó đi OT sấp mặt"
+                    android:textColor="@color/clBlack"
+                    android:textSize="@dimen/text15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:id="@+id/ln_ItemBoardDetailGroup_RecyChild_Board"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ItemBoardDetailGroup_RecyChild_Board"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="7dp"
+                        android:src="@drawable/icon_ver2_attach"
+                        android:tint="@color/clBottomDisable" />
+
+                    <TextView
+                        android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_CountAttach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:text="99+"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_ItemBoardDetailGroup_RecyChild_List"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_ItemBoardDetailGroup_RecyChild_List"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:padding="7dp"
+                        android:scaleX="-1"
+                        android:src="@drawable/icon_bpm_btn_action_9" />
+
+                    <TextView
+                        android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_CountComment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:text="99+"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:gravity="right"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rela_ItemBoardDetailGroup_RecyChild_Avatar2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_Avatar2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="2dp"
+                            android:background="@drawable/textcircleviolet"
+                            android:gravity="center"
+                            android:text="TP"
+                            android:textColor="@color/clWhite"
+                            android:textSize="@dimen/text13"
+                            android:visibility="visible" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_ItemBoardDetailGroup_RecyChild_Avatar2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/clWhite"
+                            android:backgroundTint="#00000000"
+                            android:padding="3dp"
+                            android:src="@drawable/icon_avatar64"
+                            android:tint="#00000000"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_ItemBoardDetailGroup_RecyChild_CountPeople"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:text="+99"
+                        android:textColor="@color/clBottomDisable"
+                        android:textSize="@dimen/text13" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_ItemBoardDetailGroup_RecyChild_Override"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/clGrayNavigator"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:orientation="vertical"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
