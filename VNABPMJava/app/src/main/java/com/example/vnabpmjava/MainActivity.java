@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         UserRepository repository = new UserRepository(getApplication());
         List<User> users = new ArrayList<>();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100000; i++) {
             User user = new User();
             user.setID(String.valueOf(i + 1));
             user.setUserId("note" +i);
