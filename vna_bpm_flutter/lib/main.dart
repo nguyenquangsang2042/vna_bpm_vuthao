@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:vna_bpm_flutter/model/appbase/appbase.dart';
+import 'package:vna_bpm_flutter/services/appdatabase.dart';
 
-Future<void> main()async {
-  final database = await $FloorAppDatabase.databaseBuilder('app_database.db').build();
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final database =
+      await $FloorAppDatabase.databaseBuilder('app_database.db').build();
+  final appBaseDao = database.appBaseDao;
+  List<AppBase> list = <AppBase>[];
+  for (int i = 1; i < 200002; i++) {
+    list.add(AppBase(id: i, title: i.toString()+"a", titleEN: i.toString(), content: i.toString(), assignedTo: i.toString()));
+  }
+  appBaseDao.insertAll(list);
   runApp(const MyApp());
 }
 

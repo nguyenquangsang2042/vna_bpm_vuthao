@@ -6,4 +6,6 @@ abstract class AppBaseDao
 {
   @Query('Select * From AppBase')
   Future<List<AppBase>> findAllAppBase();
+  @Insert(onConflict: OnConflictStrategy.replace)
+  Future<void> insertAll(List<AppBase> list);
 }
